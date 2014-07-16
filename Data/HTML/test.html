@@ -1,0 +1,1816 @@
+<html lang="en" ng-app="app" class="ng-scope">
+<head>
+    <link href="../../stylesheets/app.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-controller="appController" class="ng-scope" cz-shortcut-listen="true">
+<div id="sg-main">
+<header class="bg-1">
+    <nav role="navigation">
+
+        <div id="sg-nav" class="sg-nav bg-5 clear">
+            <h1 class="fl man mls">
+                <a href="/" title="Salesforce1" class="dib pam">
+                    <span class="text-color-5">Salesforce1</span>
+                </a>
+            </h1>
+
+            <!-- Desktop menu -->
+            <ul class="dn db-m db-l list-horizontal fr mrs">
+                <!-- ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="ng-scope">
+                <!-- ngIf: nav.visible --><a href="javascript:void(0);" ng-if="nav.visible" id="style" data-role="" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="navItem pvl phm f3 ng-scope sg-nav-selected">
+                <span class="text-color-5 fw-medium ng-binding">Style</span>
+            </a><!-- end ngIf: nav.visible -->
+            </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="ng-scope">
+                <!-- ngIf: nav.visible --><a href="javascript:void(0);" ng-if="nav.visible" id="components" data-role="authenticated" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="navItem pvl phm f3 ng-scope" style="display: none;">
+                <span class="text-color-5 fw-medium ng-binding">Components</span>
+            </a><!-- end ngIf: nav.visible -->
+            </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="ng-scope">
+                <!-- ngIf: nav.visible --><a href="javascript:void(0);" ng-if="nav.visible" id="isv" data-role="unauthenticated" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="navItem pvl phm f3 ng-scope">
+                <span class="text-color-5 fw-medium ng-binding">Components</span>
+            </a><!-- end ngIf: nav.visible -->
+            </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="ng-scope">
+                <!-- ngIf: nav.visible --><a href="javascript:void(0);" ng-if="nav.visible" id="examples" data-role="" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="navItem pvl phm f3 ng-scope">
+                <span class="text-color-5 fw-medium ng-binding">Examples</span>
+            </a><!-- end ngIf: nav.visible -->
+            </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="ng-scope">
+                <!-- ngIf: nav.visible -->
+            </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="ng-scope">
+                <!-- ngIf: nav.visible --><a href="javascript:void(0);" ng-if="nav.visible" id="login" data-role="unauthenticated" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="navItem pvl phm f3 ng-scope">
+                <span class="text-color-5 fw-medium ng-binding">Login</span>
+            </a><!-- end ngIf: nav.visible -->
+            </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="ng-scope">
+                <!-- ngIf: nav.visible --><a href="javascript:void(0);" ng-if="nav.visible" id="logout" data-role="authenticated" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="navItem pvl phm f3 ng-scope" style="display: none;">
+                <span class="text-color-5 fw-medium ng-binding">Logout</span>
+            </a><!-- end ngIf: nav.visible -->
+            </li><!-- end ngRepeat: nav in navItems -->
+            </ul>
+
+            <!-- Mobile open/close -->
+            <a href="javascript:void(0)" title="Open menu" ng-click="openModal()" ng-show="navOpenIs" class="db dn-ns fr mrs pvl phm f3">
+                <span class="text-color-5 fw-medium">Menu</span>
+            </a>
+            <a href="javascript:void(0)" title="Close menu" ng-click="closeModal()" ng-show="navCloseIs" class="db dn-ns fr mrs pvl phm f3 ng-hide">
+                <span class="text-color-5 fw-medium">Close</span>
+            </a>
+        </div>
+
+        <!-- Mobile menu -->
+        <ul class="list-plain pan man dn dn-l pos-abs z-modal sg-nav-mobile flag--body bg-4" ng-class="{&quot;db&quot;: navIs}">
+            <!-- ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="active--list-2 ng-scope">
+            <!-- ngIf: nav.visible --><a href="javascript:void(0)" ng-if="nav.visible" id="style" data-role="" ng-click="closeModal()" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="db navItem pvm phx f3 border-bottom border--6 ng-scope sg-nav-selected">
+            <span class="text-color-5 fw-medium ng-binding">Style</span>
+        </a><!-- end ngIf: nav.visible -->
+        </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="active--list-2 ng-scope">
+            <!-- ngIf: nav.visible --><a href="javascript:void(0)" ng-if="nav.visible" id="components" data-role="authenticated" ng-click="closeModal()" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="db navItem pvm phx f3 border-bottom border--6 ng-scope" style="display: none;">
+            <span class="text-color-5 fw-medium ng-binding">Components</span>
+        </a><!-- end ngIf: nav.visible -->
+        </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="active--list-2 ng-scope">
+            <!-- ngIf: nav.visible --><a href="javascript:void(0)" ng-if="nav.visible" id="isv" data-role="unauthenticated" ng-click="closeModal()" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="db navItem pvm phx f3 border-bottom border--6 ng-scope">
+            <span class="text-color-5 fw-medium ng-binding">Components</span>
+        </a><!-- end ngIf: nav.visible -->
+        </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="active--list-2 ng-scope">
+            <!-- ngIf: nav.visible --><a href="javascript:void(0)" ng-if="nav.visible" id="examples" data-role="" ng-click="closeModal()" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="db navItem pvm phx f3 border-bottom border--6 ng-scope">
+            <span class="text-color-5 fw-medium ng-binding">Examples</span>
+        </a><!-- end ngIf: nav.visible -->
+        </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="active--list-2 ng-scope">
+            <!-- ngIf: nav.visible -->
+        </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="active--list-2 ng-scope">
+            <!-- ngIf: nav.visible --><a href="javascript:void(0)" ng-if="nav.visible" id="login" data-role="unauthenticated" ng-click="closeModal()" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="db navItem pvm phx f3 border-bottom border--6 ng-scope">
+            <span class="text-color-5 fw-medium ng-binding">Login</span>
+        </a><!-- end ngIf: nav.visible -->
+        </li><!-- end ngRepeat: nav in navItems --><li ng-repeat="nav in navItems" ng-click="selectNav(nav)" class="active--list-2 ng-scope">
+            <!-- ngIf: nav.visible --><a href="javascript:void(0)" ng-if="nav.visible" id="logout" data-role="authenticated" ng-click="closeModal()" ng-class="{'sg-nav-selected': nav.id == selectedNav}" class="db navItem pvm phx f3 border-bottom border--6 ng-scope" style="display: none;">
+            <span class="text-color-5 fw-medium ng-binding">Logout</span>
+        </a><!-- end ngIf: nav.visible -->
+        </li><!-- end ngRepeat: nav in navItems -->
+        </ul>
+
+    </nav>
+    <div id="sg-subnav" class="dn db-ns bg-1 clear">
+        <ul class="list-horizontal fr mrl">
+            <!-- ngRepeat: nav in subnavItems --><li ng-repeat="nav in subnavItems" ng-click="selectSubnav(nav)" class="ng-scope">
+            <a href="javascript:void(0)" class="pvl phm f5 ng-binding">Guidelines</a>
+        </li><!-- end ngRepeat: nav in subnavItems --><li ng-repeat="nav in subnavItems" ng-click="selectSubnav(nav)" class="ng-scope">
+            <a href="javascript:void(0)" class="pvl phm f5 ng-binding">Color</a>
+        </li><!-- end ngRepeat: nav in subnavItems --><li ng-repeat="nav in subnavItems" ng-click="selectSubnav(nav)" class="ng-scope">
+            <a href="javascript:void(0)" class="pvl phm f5 ng-binding">Typography</a>
+        </li><!-- end ngRepeat: nav in subnavItems --><li ng-repeat="nav in subnavItems" ng-click="selectSubnav(nav)" class="ng-scope">
+            <a href="javascript:void(0)" class="pvl phm f5 ng-binding">Icons</a>
+        </li><!-- end ngRepeat: nav in subnavItems --><li ng-repeat="nav in subnavItems" ng-click="selectSubnav(nav)" class="ng-scope">
+            <a href="javascript:void(0)" class="pvl phm f5 ng-binding">Resources</a>
+        </li><!-- end ngRepeat: nav in subnavItems -->
+        </ul>
+    </div>
+</header>
+
+<div class="mht-800">
+<main id="sg-content"></main>
+<!-- ngIf: currentNav == 'style' --><div ng-if="currentNav == 'style'">
+
+<!-- Guidelines -->
+<section id="sg-guidelines" class="bg-sct-med ptx pbxl">
+
+    <!-- Modal -->
+    <article class="dn dn-l pos-abs opacity-0 sg-modal-mobile mtx z-modal sg-modalIntroAni" ng-class="{&quot;db&quot;: isGuidelineModal}">
+        <a href="javascript:void(0)" title="Close" class="dib fr ptm pbm plm" ng-click="hideGuidelineModal()">
+            <span class="db icon-utility-close f2 text-color-5"></span>
+        </a>
+        <div class="cr bg-1 brm pts phl pbm">
+            <div class="sg-v-ttl ng-binding"></div>
+            <div class="sg-v-dsc ng-binding"></div>
+        </div>
+    </article>
+
+    <!-- Overlay -->
+    <article class="dn dn-l pos-abs corner-tl bg-6-80p flag--body ht-full z-overlay sg-overlayIntroAni" ng-class="{&quot;db&quot;: isGuidelineModal}" ng-click="hideGuidelineModal()">
+    </article>
+
+    <!-- Carousel cycle -->
+    <section class="mw-16 center clear">
+        <a href="javascript:void(0)" ng-click="prevGuideline()" class="sg-arrow sg-arrow--l fl">
+            <div class="sg-arrow--fnt icon-utility-left"></div>
+        </a>
+        <a href="javascript:void(0)" ng-click="nextGuideline()" class="sg-arrow sg-arrow--r fr">
+            <div class="sg-arrow--fnt icon-utility-right"></div>
+        </a>
+        <h1 class="sg-h1 man ng-binding">Hierarchy</h1>
+    </section>
+
+    <!-- Carousel -->
+    <section class="grid flag--body sg-v-carousel sg-slide-hierarchy center">
+
+        <!-- Left annotations, desktop -->
+        <article class="grid-cell sg-v-side dn db-l sg-v">
+            <!-- ngRepeat: la in guidelines.leftAnnotations --><div ng-repeat="la in guidelines.leftAnnotations" class="dn db-l pos-rel sg-v--1">
+            <div class="sg-v-lne sg-v-lne--l pos-rel"></div>
+            <div class="sg-v-ttl ng-binding">Frame the Page</div>
+            <div class="sg-v-dsc ng-binding">The topmost element serves to frame the interface with the primary brand color while calling attention to global actions.</div>
+        </div><!-- end ngRepeat: la in guidelines.leftAnnotations --><div ng-repeat="la in guidelines.leftAnnotations" class="dn db-l pos-rel sg-v--3">
+            <div class="sg-v-lne sg-v-lne--l pos-rel"></div>
+            <div class="sg-v-ttl ng-binding">Content First</div>
+            <div class="sg-v-dsc ng-binding">Keep everything else simple and neutral to allow the content to stand on its own. Lean toward simplicity.</div>
+        </div><!-- end ngRepeat: la in guidelines.leftAnnotations -->
+        </article>
+
+        <!-- Screens and (+) callouts -->
+        <article class="grid-cell sg-v-middle">
+            <div class="pos-rel sg-v-frame bg-1">
+                <a href="javascript:void(0)" ng-click="showGuidelineModal('1')" class="dib dn-l pos-rel sg-v-btn sg-v-btn--1">
+                    <div class="text-color-5 mtm tc fw-normal f1 icon-utility-add"></div>
+                </a>
+                <a href="javascript:void(0)" ng-click="showGuidelineModal('2')" class="dib dn-l pos-rel sg-v-btn sg-v-btn--2">
+                    <div class="text-color-5 mtm tc fw-normal f1 icon-utility-add"></div>
+                </a>
+                <a href="javascript:void(0)" ng-click="showGuidelineModal('3')" class="dib dn-l pos-rel sg-v-btn sg-v-btn--3">
+                    <div class="text-color-5 mtm tc fw-normal f1 icon-utility-add"></div>
+                </a>
+                <div class="sg-v-frame-inner">
+                    <img ng-src="assets/guide-1.png" src="assets/guide-1.png">
+                </div>
+            </div>
+        </article>
+
+        <!-- Right annotations, desktop -->
+        <article class="grid-cell sg-v-side dn db-l sg-v">
+            <!-- ngRepeat: ra in guidelines.rightAnnotations --><div ng-repeat="ra in guidelines.rightAnnotations" class="dn db-l pos-rel sg-v--2">
+            <div class="sg-v-lne sg-v-lne--r pos-rel"></div>
+            <div class="sg-v-ttl ng-binding">Provide Context</div>
+            <div class="sg-v-dsc ng-binding">The dark anchor helps focus the context of the screen towards the title and image representation.</div>
+        </div><!-- end ngRepeat: ra in guidelines.rightAnnotations -->
+        </article>
+
+    </section>
+
+</section>
+
+
+
+<!-- Colors, @see src/config/style.json -->
+<section id="sg-colors" class="grid pos-rel bg-sct-drk ptxl">
+
+    <!-- Title / subtitle -->
+    <header class="mbx tc">
+        <h1 class="sg-h1 mtn">Color</h1>
+    </header>
+
+    <!-- Download swatch -->
+    <ul class="dn db-l mbx list-horizontal man pan tc">
+        <li>
+            <a href="javascript:void(0)" class="sg-options-link pam f2 icon-utility-download" title="Download Color Swatches" aria-hidden="true" ng-click="downloadColorSwatches()" data-section="">
+            </a>
+        </li>
+    </ul>
+
+    <!-- ngRepeat: color in colors --><article ng-repeat="color in colors" class="grid-cell plxl prxl pbxl ng-scope">
+
+    <!-- Subtitle -->
+    <header class="mbx tc">
+        <h2 class="sg-h2 mw-32 center ng-binding">The primary application colors are neutralized to allow the sparse use of the primary blue and content to take center stage.</h2>
+    </header>
+
+    <!-- Swatch callout -->
+    <div class="grid-cell grid-cell--center tc">
+        <!-- ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-4 sg-swatch--l" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">Anchor Navy</span>
+            <br>#34495e</p>
+    </div><!-- end ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-primary sg-swatch--l" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">Primary Blue</span>
+            <br>#2a94d6</p>
+    </div><!-- end ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-2 sg-swatch--l" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">Slate Grey</span>
+            <br>#f0f1f2</p>
+    </div><!-- end ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-1 sg-swatch--l" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">White</span>
+            <br>#ffffff</p>
+    </div><!-- end ngRepeat: c in color.colors -->
+    </div>
+
+</article><!-- end ngRepeat: color in colors --><article ng-repeat="color in colors" class="grid-cell plxl prxl pbxl ng-scope">
+
+    <!-- Subtitle -->
+    <header class="mbx tc">
+        <h2 class="sg-h2 mw-32 center ng-binding">Each area of the app is branded with a color and an image. These colors are desaturated to work better with the primary brand colors.</h2>
+    </header>
+
+    <!-- Swatch callout -->
+    <div class="grid-cell grid-cell--center tc">
+        <!-- ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-post sg-swatch--m" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">Post</span>
+            <br>#4eb1cb</p>
+    </div><!-- end ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-thanks sg-swatch--m" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">Thanks</span>
+            <br>#cf5c60</p>
+    </div><!-- end ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-account sg-swatch--m" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">Account</span>
+            <br>#717ecd</p>
+    </div><!-- end ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-task sg-swatch--m" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">Task</span>
+            <br>#4ab471</p>
+    </div><!-- end ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-opportunity sg-swatch--m" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">Opportunity</span>
+            <br>#f3ae4e</p>
+    </div><!-- end ngRepeat: c in color.colors --><div class="dib brs  mvs mhs bg-event sg-swatch--m" ng-repeat="c in color.colors">
+        <p class="pos-rel bg-1 man pvl phs sg-swatch-bg sg-text-meta tc caps border-top border--3 ng-binding">
+            <span class="fw-semibold ng-binding">Event</span>
+            <br>#d96383</p>
+    </div><!-- end ngRepeat: c in color.colors -->
+    </div>
+
+</article><!-- end ngRepeat: color in colors -->
+</section>
+
+
+<!-- Typography -->
+<section id="sg-typography" class="bg-sct-med paxl">
+
+    <header class="mbx tc">
+        <h1 class="sg-h1 mtn">Typography</h1>
+        <h2 class="sg-h2 mw-32 center">Good typography adds personality to an application, and can help set tone in the absence of visual elements. Salesforce uses <b>Proxima Nova Soft</b> to create a friendly and inviting environment. <a href="http://www.myfonts.com/fonts/marksimonson/proxima-nova-soft" title="Get Proxima Nova Soft">Proxima Nova Soft</a> was designed by Mark Simonson in 2011 as a rounded version of Proxima Nova.</h2>
+    </header>
+
+    <!-- Weights -->
+    <article class="grid-cell grid-cell--center mbxx tc">
+        <div class="dib brs sg-swatch--m mvs mhsx bg-1">
+            <h1 class="f-40 fw-normal man ptxx pbx">Aa</h1>
+            <p class="pos-rel border-top border--3 man pvx phs sg-weight-bg sg-text-meta fw-semibold tc caps">Regular</p>
+        </div>
+        <div class="dib brs sg-swatch--m mvs mhsx bg-1">
+            <h1 class="f-40 fw-medium man ptxx pbx">Aa</h1>
+            <p class="pos-rel border-top border--3 man pvx phs sg-weight-bg sg-text-meta fw-semibold tc caps">Medium</p>
+        </div>
+        <div class="dib brs sg-swatch--m mvs mhsx bg-1">
+            <h1 class="f-40 fw-semibold man ptxx pbx">Aa</h1>
+            <p class="pos-rel border-top border--3 man pvx phs sg-weight-bg sg-text-meta fw-semibold tc caps">Semibold</p>
+        </div>
+        <div class="dib brs sg-swatch--m mvs mhsx bg-1">
+            <h1 class="f-40 fw-bold man ptxx pbx">Aa</h1>
+            <p class="pos-rel border-top border--3 man pvx phs sg-weight-bg sg-text-meta fw-semibold tc caps">Bold</p>
+        </div>
+    </article>
+
+    <!-- Scale -->
+    <article class="tc">
+        <h2 class="f3 fw-semibold mbn">22px</h2>
+        <p class="f1 mtn mbx">The quick brown fox jumps over the lazy dog.</p>
+        <h2 class="f3 fw-semibold mbn">18px</h2>
+        <p class="f2 mtn mbx">The quick brown fox jumps over the lazy dog.</p>
+        <h2 class="f3 fw-semibold mbn">16px</h2>
+        <p class="f3 mtn mbx">The quick brown fox jumps over the lazy dog.</p>
+        <h2 class="f3 fw-semibold mbn">15px</h2>
+        <p class="f4 mtn mbx">The quick brown fox jumps over the lazy dog.</p>
+        <h2 class="f3 fw-semibold mbn">14px</h2>
+        <p class="f5 mtn mbx">The quick brown fox jumps over the lazy dog.</p>
+        <h2 class="f3 fw-semibold mbn">13px</h2>
+        <p class="f6 mtn mbx">The quick brown fox jumps over the lazy dog.</p>
+    </article>
+
+</section>
+
+
+
+<section id="sg-icons">
+
+<!-- ngRepeat: set in iconSets --><div ng-repeat="set in iconSets" id="standard" class="grid bg-sct-drk paxl">
+
+<header class="grid-cell mbx tc">
+    <h1 class="sg-h1 mtn ng-binding">Standard Icons</h1>
+    <h2 class="sg-h2 mw-32 center ng-binding">Standard icons represent entities, objects and MDP actions.</h2>
+</header>
+<article class="dn db-l mbx">
+    <ul class="list-horizontal man pan tc">
+        <li>
+            <a href="javascript:void(0)" class="sg-options-link ss-sun pam f2" ng-click="toggleBackground(set.id)" title="Toggle Background" aria-hidden="true" data-section="standard">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="sg-options-link icon-utility-download pam f2" ng-click="download(set.id)" title="Download Icons" aria-hidden="true" data-section="standard">
+            </a>
+        </li>
+    </ul>
+</article>
+
+<article class="grid-cell grid-cell--center tc">
+
+<!-- This renders for standard and custom icons -->
+<!-- ngIf: set.isClass --><div ng-if="set.isClass" class="ng-scope">
+<!-- ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--account" title="Account"></div>
+    <p class="tc mts mbl caps text-truncate" title="Account">
+        <strong class="ng-binding">Account</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--calibration" title="Calibration"></div>
+    <p class="tc mts mbl caps text-truncate" title="Calibration">
+        <strong class="ng-binding">Calibration</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--campaign" title="Campaign"></div>
+    <p class="tc mts mbl caps text-truncate" title="Campaign">
+        <strong class="ng-binding">Campaign</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--campaign-members" title="Campaign Members"></div>
+    <p class="tc mts mbl caps text-truncate" title="Campaign Members">
+        <strong class="ng-binding">Campaign Members</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--coaching" title="Coaching"></div>
+    <p class="tc mts mbl caps text-truncate" title="Coaching">
+        <strong class="ng-binding">Coaching</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--connected-apps-admins" title="Connected Apps Admins"></div>
+    <p class="tc mts mbl caps text-truncate" title="Connected Apps Admins">
+        <strong class="ng-binding">Connected Apps Admins</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--contact" title="Contact"></div>
+    <p class="tc mts mbl caps text-truncate" title="Contact">
+        <strong class="ng-binding">Contact</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--contract" title="Contract"></div>
+    <p class="tc mts mbl caps text-truncate" title="Contract">
+        <strong class="ng-binding">Contract</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--dashboard" title="Dashboard"></div>
+    <p class="tc mts mbl caps text-truncate" title="Dashboard">
+        <strong class="ng-binding">Dashboard</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--drafts" title="Drafts"></div>
+    <p class="tc mts mbl caps text-truncate" title="Drafts">
+        <strong class="ng-binding">Drafts</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--endorsement" title="Endorsement"></div>
+    <p class="tc mts mbl caps text-truncate" title="Endorsement">
+        <strong class="ng-binding">Endorsement</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--lead" title="Lead"></div>
+    <p class="tc mts mbl caps text-truncate" title="Lead">
+        <strong class="ng-binding">Lead</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--opportunity" title="Opportunity"></div>
+    <p class="tc mts mbl caps text-truncate" title="Opportunity">
+        <strong class="ng-binding">Opportunity</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--performance" title="Performance"></div>
+    <p class="tc mts mbl caps text-truncate" title="Performance">
+        <strong class="ng-binding">Performance</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--product" title="Product"></div>
+    <p class="tc mts mbl caps text-truncate" title="Product">
+        <strong class="ng-binding">Product</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--portal" title="Portal"></div>
+    <p class="tc mts mbl caps text-truncate" title="Portal">
+        <strong class="ng-binding">Portal</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--approval" title="Approval"></div>
+    <p class="tc mts mbl caps text-truncate" title="Approval">
+        <strong class="ng-binding">Approval</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--apps" title="Apps"></div>
+    <p class="tc mts mbl caps text-truncate" title="Apps">
+        <strong class="ng-binding">Apps</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--avatar" title="Avatar"></div>
+    <p class="tc mts mbl caps text-truncate" title="Avatar">
+        <strong class="ng-binding">Avatar</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--email" title="Email"></div>
+    <p class="tc mts mbl caps text-truncate" title="Email">
+        <strong class="ng-binding">Email</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--event" title="Event"></div>
+    <p class="tc mts mbl caps text-truncate" title="Event">
+        <strong class="ng-binding">Event</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--feed" title="Feed"></div>
+    <p class="tc mts mbl caps text-truncate" title="Feed">
+        <strong class="ng-binding">Feed</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--feedback" title="Feedback"></div>
+    <p class="tc mts mbl caps text-truncate" title="Feedback">
+        <strong class="ng-binding">Feedback</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--file" title="File"></div>
+    <p class="tc mts mbl caps text-truncate" title="File">
+        <strong class="ng-binding">File</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--groups" title="Groups"></div>
+    <p class="tc mts mbl caps text-truncate" title="Groups">
+        <strong class="ng-binding">Groups</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--link" title="Link"></div>
+    <p class="tc mts mbl caps text-truncate" title="Link">
+        <strong class="ng-binding">Link</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--note" title="Note"></div>
+    <p class="tc mts mbl caps text-truncate" title="Note">
+        <strong class="ng-binding">Note</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--people" title="People"></div>
+    <p class="tc mts mbl caps text-truncate" title="People">
+        <strong class="ng-binding">People</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--photo" title="Photo"></div>
+    <p class="tc mts mbl caps text-truncate" title="Photo">
+        <strong class="ng-binding">Photo</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--poll" title="Poll"></div>
+    <p class="tc mts mbl caps text-truncate" title="Poll">
+        <strong class="ng-binding">Poll</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--post" title="Post"></div>
+    <p class="tc mts mbl caps text-truncate" title="Post">
+        <strong class="ng-binding">Post</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--question-best" title="Question Best"></div>
+    <p class="tc mts mbl caps text-truncate" title="Question Best">
+        <strong class="ng-binding">Question Best</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--question-feed" title="Question Feed"></div>
+    <p class="tc mts mbl caps text-truncate" title="Question Feed">
+        <strong class="ng-binding">Question Feed</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--record" title="Record"></div>
+    <p class="tc mts mbl caps text-truncate" title="Record">
+        <strong class="ng-binding">Record</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--report" title="Report"></div>
+    <p class="tc mts mbl caps text-truncate" title="Report">
+        <strong class="ng-binding">Report</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--recent" title="Recent"></div>
+    <p class="tc mts mbl caps text-truncate" title="Recent">
+        <strong class="ng-binding">Recent</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--related-list" title="Related List"></div>
+    <p class="tc mts mbl caps text-truncate" title="Related List">
+        <strong class="ng-binding">Related List</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--solution" title="Solution"></div>
+    <p class="tc mts mbl caps text-truncate" title="Solution">
+        <strong class="ng-binding">Solution</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--social" title="Social"></div>
+    <p class="tc mts mbl caps text-truncate" title="Social">
+        <strong class="ng-binding">Social</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--skill-entity" title="Skill Entity"></div>
+    <p class="tc mts mbl caps text-truncate" title="Skill Entity">
+        <strong class="ng-binding">Skill Entity</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--task" title="Task"></div>
+    <p class="tc mts mbl caps text-truncate" title="Task">
+        <strong class="ng-binding">Task</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--thanks" title="Thanks"></div>
+    <p class="tc mts mbl caps text-truncate" title="Thanks">
+        <strong class="ng-binding">Thanks</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--today" title="Today"></div>
+    <p class="tc mts mbl caps text-truncate" title="Today">
+        <strong class="ng-binding">Today</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--canvas" title="Canvas"></div>
+    <p class="tc mts mbl caps text-truncate" title="Canvas">
+        <strong class="ng-binding">Canvas</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom" title="Custom"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom">
+        <strong class="ng-binding">Custom</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--default" title="Default"></div>
+    <p class="tc mts mbl caps text-truncate" title="Default">
+        <strong class="ng-binding">Default</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--avatar-loading" title="Avatar Loading"></div>
+    <p class="tc mts mbl caps text-truncate" title="Avatar Loading">
+        <strong class="ng-binding">Avatar Loading</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--groups-loading" title="Groups Loading"></div>
+    <p class="tc mts mbl caps text-truncate" title="Groups Loading">
+        <strong class="ng-binding">Groups Loading</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--thanks-loading" title="Thanks Loading"></div>
+    <p class="tc mts mbl caps text-truncate" title="Thanks Loading">
+        <strong class="ng-binding">Thanks Loading</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--scan-card" title="Scan Card"></div>
+    <p class="tc mts mbl caps text-truncate" title="Scan Card">
+        <strong class="ng-binding">Scan Card</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--files" title="Files"></div>
+    <p class="tc mts mbl caps text-truncate" title="Files">
+        <strong class="ng-binding">Files</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--quotes" title="Quotes"></div>
+    <p class="tc mts mbl caps text-truncate" title="Quotes">
+        <strong class="ng-binding">Quotes</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--goals" title="Goals"></div>
+    <p class="tc mts mbl caps text-truncate" title="Goals">
+        <strong class="ng-binding">Goals</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--concur" title="Concur"></div>
+    <p class="tc mts mbl caps text-truncate" title="Concur">
+        <strong class="ng-binding">Concur</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--dropbox" title="Dropbox"></div>
+    <p class="tc mts mbl caps text-truncate" title="Dropbox">
+        <strong class="ng-binding">Dropbox</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--evernote" title="Evernote"></div>
+    <p class="tc mts mbl caps text-truncate" title="Evernote">
+        <strong class="ng-binding">Evernote</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--answer-best" title="Answer Best"></div>
+    <p class="tc mts mbl caps text-truncate" title="Answer Best">
+        <strong class="ng-binding">Answer Best</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--answer-private" title="Answer Private"></div>
+    <p class="tc mts mbl caps text-truncate" title="Answer Private">
+        <strong class="ng-binding">Answer Private</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--answer-public" title="Answer Public"></div>
+    <p class="tc mts mbl caps text-truncate" title="Answer Public">
+        <strong class="ng-binding">Answer Public</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--article" title="Article"></div>
+    <p class="tc mts mbl caps text-truncate" title="Article">
+        <strong class="ng-binding">Article</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--team-member" title="Team Member"></div>
+    <p class="tc mts mbl caps text-truncate" title="Team Member">
+        <strong class="ng-binding">Team Member</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--case-change-status" title="Case Change Status"></div>
+    <p class="tc mts mbl caps text-truncate" title="Case Change Status">
+        <strong class="ng-binding">Case Change Status</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--case-comment" title="Case Comment"></div>
+    <p class="tc mts mbl caps text-truncate" title="Case Comment">
+        <strong class="ng-binding">Case Comment</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--case-email" title="Case Email"></div>
+    <p class="tc mts mbl caps text-truncate" title="Case Email">
+        <strong class="ng-binding">Case Email</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--case-log-a-call" title="Case Log a Call"></div>
+    <p class="tc mts mbl caps text-truncate" title="Case Log a Call">
+        <strong class="ng-binding">Case Log a Call</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--case-transcript" title="Case Transcript"></div>
+    <p class="tc mts mbl caps text-truncate" title="Case Transcript">
+        <strong class="ng-binding">Case Transcript</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files -->
+</div><!-- end ngIf: set.isClass -->
+
+<!-- This renders for the icon font -->
+<!-- ngIf: set.isIconFont -->
+
+<!-- This renders for file icons -->
+<!-- ngIf: set.isFile -->
+
+</article>
+
+</div><!-- end ngRepeat: set in iconSets --><div ng-repeat="set in iconSets" id="custom" class="grid bg-sct-med paxl">
+
+<header class="grid-cell mbx tc">
+    <h1 class="sg-h1 mtn ng-binding">Custom Icons</h1>
+    <h2 class="sg-h2 mw-32 center ng-binding">Custom icons are available for custom objects.</h2>
+</header>
+<article class="dn db-l mbx">
+    <ul class="list-horizontal man pan tc">
+        <li>
+            <a href="javascript:void(0)" class="sg-options-link ss-sun pam f2" ng-click="toggleBackground(set.id)" title="Toggle Background" aria-hidden="true" data-section="custom">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="sg-options-link icon-utility-download pam f2" ng-click="download(set.id)" title="Download Icons" aria-hidden="true" data-section="custom">
+            </a>
+        </li>
+    </ul>
+</article>
+
+<article class="grid-cell grid-cell--center tc">
+
+<!-- This renders for standard and custom icons -->
+<!-- ngIf: set.isClass --><div ng-if="set.isClass" class="ng-scope">
+<!-- ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-1" title="Custom1"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom1">
+        <strong class="ng-binding">Custom1</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-2" title="Custom2"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom2">
+        <strong class="ng-binding">Custom2</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-3" title="Custom3"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom3">
+        <strong class="ng-binding">Custom3</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-4" title="Custom4"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom4">
+        <strong class="ng-binding">Custom4</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-5" title="Custom5"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom5">
+        <strong class="ng-binding">Custom5</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-6" title="Custom6"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom6">
+        <strong class="ng-binding">Custom6</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-7" title="Custom7"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom7">
+        <strong class="ng-binding">Custom7</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-8" title="Custom8"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom8">
+        <strong class="ng-binding">Custom8</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-9" title="Custom9"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom9">
+        <strong class="ng-binding">Custom9</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-10" title="Custom10"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom10">
+        <strong class="ng-binding">Custom10</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-11" title="Custom11"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom11">
+        <strong class="ng-binding">Custom11</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-12" title="Custom12"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom12">
+        <strong class="ng-binding">Custom12</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-13" title="Custom13"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom13">
+        <strong class="ng-binding">Custom13</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-14" title="Custom14"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom14">
+        <strong class="ng-binding">Custom14</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-15" title="Custom15"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom15">
+        <strong class="ng-binding">Custom15</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-16" title="Custom16"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom16">
+        <strong class="ng-binding">Custom16</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-17" title="Custom17"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom17">
+        <strong class="ng-binding">Custom17</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-18" title="Custom18"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom18">
+        <strong class="ng-binding">Custom18</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-19" title="Custom19"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom19">
+        <strong class="ng-binding">Custom19</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-20" title="Custom20"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom20">
+        <strong class="ng-binding">Custom20</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-21" title="Custom21"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom21">
+        <strong class="ng-binding">Custom21</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-22" title="Custom22"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom22">
+        <strong class="ng-binding">Custom22</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-23" title="Custom23"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom23">
+        <strong class="ng-binding">Custom23</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-24" title="Custom24"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom24">
+        <strong class="ng-binding">Custom24</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-25" title="Custom25"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom25">
+        <strong class="ng-binding">Custom25</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-26" title="Custom26"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom26">
+        <strong class="ng-binding">Custom26</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-27" title="Custom27"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom27">
+        <strong class="ng-binding">Custom27</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-28" title="Custom28"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom28">
+        <strong class="ng-binding">Custom28</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-29" title="Custom29"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom29">
+        <strong class="ng-binding">Custom29</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-30" title="Custom30"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom30">
+        <strong class="ng-binding">Custom30</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-31" title="Custom31"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom31">
+        <strong class="ng-binding">Custom31</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-32" title="Custom32"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom32">
+        <strong class="ng-binding">Custom32</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-33" title="Custom33"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom33">
+        <strong class="ng-binding">Custom33</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-34" title="Custom34"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom34">
+        <strong class="ng-binding">Custom34</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-35" title="Custom35"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom35">
+        <strong class="ng-binding">Custom35</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-36" title="Custom36"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom36">
+        <strong class="ng-binding">Custom36</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-37" title="Custom37"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom37">
+        <strong class="ng-binding">Custom37</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-38" title="Custom38"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom38">
+        <strong class="ng-binding">Custom38</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-39" title="Custom39"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom39">
+        <strong class="ng-binding">Custom39</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-40" title="Custom40"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom40">
+        <strong class="ng-binding">Custom40</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-41" title="Custom41"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom41">
+        <strong class="ng-binding">Custom41</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-42" title="Custom42"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom42">
+        <strong class="ng-binding">Custom42</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-43" title="Custom43"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom43">
+        <strong class="ng-binding">Custom43</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-44" title="Custom44"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom44">
+        <strong class="ng-binding">Custom44</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-45" title="Custom45"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom45">
+        <strong class="ng-binding">Custom45</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-46" title="Custom46"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom46">
+        <strong class="ng-binding">Custom46</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-47" title="Custom47"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom47">
+        <strong class="ng-binding">Custom47</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-48" title="Custom48"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom48">
+        <strong class="ng-binding">Custom48</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-49" title="Custom49"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom49">
+        <strong class="ng-binding">Custom49</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-50" title="Custom50"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom50">
+        <strong class="ng-binding">Custom50</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-51" title="Custom51"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom51">
+        <strong class="ng-binding">Custom51</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-52" title="Custom52"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom52">
+        <strong class="ng-binding">Custom52</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-53" title="Custom53"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom53">
+        <strong class="ng-binding">Custom53</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-54" title="Custom54"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom54">
+        <strong class="ng-binding">Custom54</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-55" title="Custom55"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom55">
+        <strong class="ng-binding">Custom55</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-56" title="Custom56"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom56">
+        <strong class="ng-binding">Custom56</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-57" title="Custom57"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom57">
+        <strong class="ng-binding">Custom57</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-58" title="Custom58"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom58">
+        <strong class="ng-binding">Custom58</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-59" title="Custom59"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom59">
+        <strong class="ng-binding">Custom59</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-60" title="Custom60"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom60">
+        <strong class="ng-binding">Custom60</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-61" title="Custom61"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom61">
+        <strong class="ng-binding">Custom61</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-62" title="Custom62"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom62">
+        <strong class="ng-binding">Custom62</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-63" title="Custom63"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom63">
+        <strong class="ng-binding">Custom63</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-64" title="Custom64"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom64">
+        <strong class="ng-binding">Custom64</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-65" title="Custom65"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom65">
+        <strong class="ng-binding">Custom65</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-66" title="Custom66"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom66">
+        <strong class="ng-binding">Custom66</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-67" title="Custom67"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom67">
+        <strong class="ng-binding">Custom67</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-68" title="Custom68"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom68">
+        <strong class="ng-binding">Custom68</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-69" title="Custom69"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom69">
+        <strong class="ng-binding">Custom69</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-70" title="Custom70"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom70">
+        <strong class="ng-binding">Custom70</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-71" title="Custom71"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom71">
+        <strong class="ng-binding">Custom71</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-72" title="Custom72"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom72">
+        <strong class="ng-binding">Custom72</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-73" title="Custom73"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom73">
+        <strong class="ng-binding">Custom73</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-74" title="Custom74"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom74">
+        <strong class="ng-binding">Custom74</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-75" title="Custom75"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom75">
+        <strong class="ng-binding">Custom75</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-76" title="Custom76"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom76">
+        <strong class="ng-binding">Custom76</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-77" title="Custom77"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom77">
+        <strong class="ng-binding">Custom77</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-78" title="Custom78"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom78">
+        <strong class="ng-binding">Custom78</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-79" title="Custom79"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom79">
+        <strong class="ng-binding">Custom79</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-80" title="Custom80"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom80">
+        <strong class="ng-binding">Custom80</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-81" title="Custom81"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom81">
+        <strong class="ng-binding">Custom81</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-82" title="Custom82"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom82">
+        <strong class="ng-binding">Custom82</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-83" title="Custom83"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom83">
+        <strong class="ng-binding">Custom83</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-84" title="Custom84"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom84">
+        <strong class="ng-binding">Custom84</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-85" title="Custom85"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom85">
+        <strong class="ng-binding">Custom85</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-86" title="Custom86"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom86">
+        <strong class="ng-binding">Custom86</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-87" title="Custom87"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom87">
+        <strong class="ng-binding">Custom87</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-88" title="Custom88"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom88">
+        <strong class="ng-binding">Custom88</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-89" title="Custom89"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom89">
+        <strong class="ng-binding">Custom89</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-90" title="Custom90"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom90">
+        <strong class="ng-binding">Custom90</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-91" title="Custom91"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom91">
+        <strong class="ng-binding">Custom91</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-92" title="Custom92"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom92">
+        <strong class="ng-binding">Custom92</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-93" title="Custom93"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom93">
+        <strong class="ng-binding">Custom93</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-94" title="Custom94"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom94">
+        <strong class="ng-binding">Custom94</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-95" title="Custom95"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom95">
+        <strong class="ng-binding">Custom95</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-96" title="Custom96"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom96">
+        <strong class="ng-binding">Custom96</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-97" title="Custom97"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom97">
+        <strong class="ng-binding">Custom97</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-98" title="Custom98"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom98">
+        <strong class="ng-binding">Custom98</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-99" title="Custom99"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom99">
+        <strong class="ng-binding">Custom99</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art center icon--custom-100" title="Custom100"></div>
+    <p class="tc mts mbl caps text-truncate" title="Custom100">
+        <strong class="ng-binding">Custom100</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files -->
+</div><!-- end ngIf: set.isClass -->
+
+<!-- This renders for the icon font -->
+<!-- ngIf: set.isIconFont -->
+
+<!-- This renders for file icons -->
+<!-- ngIf: set.isFile -->
+
+</article>
+
+</div><!-- end ngRepeat: set in iconSets --><div ng-repeat="set in iconSets" id="font" class="grid bg-sct-drk paxl">
+
+<header class="grid-cell mbx tc">
+    <h1 class="sg-h1 mtn ng-binding">Icon Font</h1>
+    <h2 class="sg-h2 mw-32 center ng-binding">Utility, interface and action icons are combined in one icon font for extensibility.</h2>
+</header>
+<article class="dn db-l mbx">
+    <ul class="list-horizontal man pan tc">
+        <li>
+            <a href="javascript:void(0)" class="sg-options-link ss-sun pam f2" ng-click="toggleBackground(set.id)" title="Toggle Background" aria-hidden="true" data-section="font">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="sg-options-link icon-utility-download pam f2" ng-click="download(set.id)" title="Download Icons" aria-hidden="true" data-section="font">
+            </a>
+        </li>
+    </ul>
+</article>
+
+<article class="grid-cell grid-cell--center tc">
+
+<!-- This renders for standard and custom icons -->
+<!-- ngIf: set.isClass -->
+
+<!-- This renders for the icon font -->
+<!-- ngIf: set.isIconFont --><div ng-if="set.isIconFont" class="ng-scope">
+<!-- ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-down" title="arrow d"></div>
+    <p class="tc mts mbl caps text-truncate" title="arrow d">
+        <strong class="ng-binding">arrow d</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-left" title="arrow l"></div>
+    <p class="tc mts mbl caps text-truncate" title="arrow l">
+        <strong class="ng-binding">arrow l</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-right" title="arrow r"></div>
+    <p class="tc mts mbl caps text-truncate" title="arrow r">
+        <strong class="ng-binding">arrow r</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-up" title="arrow u"></div>
+    <p class="tc mts mbl caps text-truncate" title="arrow u">
+        <strong class="ng-binding">arrow u</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-attach" title="attach"></div>
+    <p class="tc mts mbl caps text-truncate" title="attach">
+        <strong class="ng-binding">attach</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-bookmark" title="bookmark"></div>
+    <p class="tc mts mbl caps text-truncate" title="bookmark">
+        <strong class="ng-binding">bookmark</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-call" title="call"></div>
+    <p class="tc mts mbl caps text-truncate" title="call">
+        <strong class="ng-binding">call</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-chat" title="chat"></div>
+    <p class="tc mts mbl caps text-truncate" title="chat">
+        <strong class="ng-binding">chat</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-checkin" title="checkin"></div>
+    <p class="tc mts mbl caps text-truncate" title="checkin">
+        <strong class="ng-binding">checkin</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-chevronleft" title="previous"></div>
+    <p class="tc mts mbl caps text-truncate" title="previous">
+        <strong class="ng-binding">previous</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-chevronright" title="next"></div>
+    <p class="tc mts mbl caps text-truncate" title="next">
+        <strong class="ng-binding">next</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-close" title="close"></div>
+    <p class="tc mts mbl caps text-truncate" title="close">
+        <strong class="ng-binding">close</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-email" title="email"></div>
+    <p class="tc mts mbl caps text-truncate" title="email">
+        <strong class="ng-binding">email</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-event" title="event"></div>
+    <p class="tc mts mbl caps text-truncate" title="event">
+        <strong class="ng-binding">event</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-favorite" title="favorite"></div>
+    <p class="tc mts mbl caps text-truncate" title="favorite">
+        <strong class="ng-binding">favorite</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-user" title="user"></div>
+    <p class="tc mts mbl caps text-truncate" title="user">
+        <strong class="ng-binding">user</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-adduser" title="add user"></div>
+    <p class="tc mts mbl caps text-truncate" title="add user">
+        <strong class="ng-binding">add user</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-groups" title="groups"></div>
+    <p class="tc mts mbl caps text-truncate" title="groups">
+        <strong class="ng-binding">groups</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-people" title="people"></div>
+    <p class="tc mts mbl caps text-truncate" title="people">
+        <strong class="ng-binding">people</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-image" title="image"></div>
+    <p class="tc mts mbl caps text-truncate" title="image">
+        <strong class="ng-binding">image</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-like" title="like"></div>
+    <p class="tc mts mbl caps text-truncate" title="like">
+        <strong class="ng-binding">like</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-link" title="link"></div>
+    <p class="tc mts mbl caps text-truncate" title="link">
+        <strong class="ng-binding">link</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-list" title="list"></div>
+    <p class="tc mts mbl caps text-truncate" title="list">
+        <strong class="ng-binding">list</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-location" title="location"></div>
+    <p class="tc mts mbl caps text-truncate" title="location">
+        <strong class="ng-binding">location</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-photo" title="photo"></div>
+    <p class="tc mts mbl caps text-truncate" title="photo">
+        <strong class="ng-binding">photo</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-reply" title="reply"></div>
+    <p class="tc mts mbl caps text-truncate" title="reply">
+        <strong class="ng-binding">reply</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-refresh" title="refresh"></div>
+    <p class="tc mts mbl caps text-truncate" title="refresh">
+        <strong class="ng-binding">refresh</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-rows" title="rows"></div>
+    <p class="tc mts mbl caps text-truncate" title="rows">
+        <strong class="ng-binding">rows</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-search" title="search"></div>
+    <p class="tc mts mbl caps text-truncate" title="search">
+        <strong class="ng-binding">search</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-settings" title="settings"></div>
+    <p class="tc mts mbl caps text-truncate" title="settings">
+        <strong class="ng-binding">settings</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-share" title="share"></div>
+    <p class="tc mts mbl caps text-truncate" title="share">
+        <strong class="ng-binding">share</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-logout" title="logout"></div>
+    <p class="tc mts mbl caps text-truncate" title="logout">
+        <strong class="ng-binding">logout</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-upload" title="upload"></div>
+    <p class="tc mts mbl caps text-truncate" title="upload">
+        <strong class="ng-binding">upload</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-download" title="download"></div>
+    <p class="tc mts mbl caps text-truncate" title="download">
+        <strong class="ng-binding">download</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-priority" title="priority"></div>
+    <p class="tc mts mbl caps text-truncate" title="priority">
+        <strong class="ng-binding">priority</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-filter" title="filter"></div>
+    <p class="tc mts mbl caps text-truncate" title="filter">
+        <strong class="ng-binding">filter</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-question" title="question"></div>
+    <p class="tc mts mbl caps text-truncate" title="question">
+        <strong class="ng-binding">question</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-help" title="help"></div>
+    <p class="tc mts mbl caps text-truncate" title="help">
+        <strong class="ng-binding">help</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-error" title="error"></div>
+    <p class="tc mts mbl caps text-truncate" title="error">
+        <strong class="ng-binding">error</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-warning" title="warning"></div>
+    <p class="tc mts mbl caps text-truncate" title="warning">
+        <strong class="ng-binding">warning</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-info" title="info"></div>
+    <p class="tc mts mbl caps text-truncate" title="info">
+        <strong class="ng-binding">info</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-add" title="add"></div>
+    <p class="tc mts mbl caps text-truncate" title="add">
+        <strong class="ng-binding">add</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-edit" title="edit"></div>
+    <p class="tc mts mbl caps text-truncate" title="edit">
+        <strong class="ng-binding">edit</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-back" title="back"></div>
+    <p class="tc mts mbl caps text-truncate" title="back">
+        <strong class="ng-binding">back</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-lock" title="lock"></div>
+    <p class="tc mts mbl caps text-truncate" title="lock">
+        <strong class="ng-binding">lock</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-spinner" title="spinner"></div>
+    <p class="tc mts mbl caps text-truncate" title="spinner">
+        <strong class="ng-binding">spinner</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-notification" title="notify"></div>
+    <p class="tc mts mbl caps text-truncate" title="notify">
+        <strong class="ng-binding">notify</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-check" title="check"></div>
+    <p class="tc mts mbl caps text-truncate" title="check">
+        <strong class="ng-binding">check</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-success" title="success"></div>
+    <p class="tc mts mbl caps text-truncate" title="success">
+        <strong class="ng-binding">success</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-sms" title="sms"></div>
+    <p class="tc mts mbl caps text-truncate" title="sms">
+        <strong class="ng-binding">sms</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-push" title="push"></div>
+    <p class="tc mts mbl caps text-truncate" title="push">
+        <strong class="ng-binding">push</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--fnt center tc icon-utility-frozen" title="frozen"></div>
+    <p class="tc mts mbl caps text-truncate" title="frozen">
+        <strong class="ng-binding">frozen</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files -->
+</div><!-- end ngIf: set.isIconFont -->
+
+<!-- This renders for file icons -->
+<!-- ngIf: set.isFile -->
+
+</article>
+
+</div><!-- end ngRepeat: set in iconSets --><div ng-repeat="set in iconSets" id="doctype" class="grid bg-sct-med paxl">
+
+<header class="grid-cell mbx tc">
+    <h1 class="sg-h1 mtn ng-binding">Doctype Icons</h1>
+    <h2 class="sg-h2 mw-32 center ng-binding">Doctype icons represent a type of file when a preview or image is unavailable.</h2>
+</header>
+<article class="dn db-l mbx">
+    <ul class="list-horizontal man pan tc">
+        <li>
+            <a href="javascript:void(0)" class="sg-options-link ss-sun pam f2" ng-click="toggleBackground(set.id)" title="Toggle Background" aria-hidden="true" data-section="doctype">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="sg-options-link icon-utility-download pam f2" ng-click="download(set.id)" title="Download Icons" aria-hidden="true" data-section="doctype">
+            </a>
+        </li>
+    </ul>
+</article>
+
+<article class="grid-cell grid-cell--center tc">
+
+<!-- This renders for standard and custom icons -->
+<!-- ngIf: set.isClass -->
+
+<!-- This renders for the icon font -->
+<!-- ngIf: set.isIconFont -->
+
+<!-- This renders for file icons -->
+<!-- ngIf: set.isFile --><div ng-if="set.isFile" class="ng-scope">
+<!-- ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/ai.svg" title="Illustrator">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Illustrator">
+        <strong class="ng-binding">Illustrator</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/audio.svg" title="Audio">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Audio">
+        <strong class="ng-binding">Audio</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/csv.svg" title="CSV">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="CSV">
+        <strong class="ng-binding">CSV</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/eps.svg" title="EPS">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="EPS">
+        <strong class="ng-binding">EPS</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/excel.svg" title="Excel">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Excel">
+        <strong class="ng-binding">Excel</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/exe.svg" title="Exe">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Exe">
+        <strong class="ng-binding">Exe</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/flash.svg" title="Flash">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Flash">
+        <strong class="ng-binding">Flash</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/gdoc.svg" title="Gdoc">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Gdoc">
+        <strong class="ng-binding">Gdoc</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/gpres.svg" title="Gpres">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Gpres">
+        <strong class="ng-binding">Gpres</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/gsheet.svg" title="Gsheet">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Gsheet">
+        <strong class="ng-binding">Gsheet</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/html.svg" title="Html">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Html">
+        <strong class="ng-binding">Html</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/image.svg" title="Image">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Image">
+        <strong class="ng-binding">Image</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/keynote.svg" title="Keynote">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Keynote">
+        <strong class="ng-binding">Keynote</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/link.svg" title="Link">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Link">
+        <strong class="ng-binding">Link</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/mp4.svg" title="mp4">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="mp4">
+        <strong class="ng-binding">mp4</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/overlay.svg" title="Overlay">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Overlay">
+        <strong class="ng-binding">Overlay</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/pack.svg" title="Pack">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Pack">
+        <strong class="ng-binding">Pack</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/pages.svg" title="Pages">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Pages">
+        <strong class="ng-binding">Pages</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/pdf.svg" title="Pdf">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Pdf">
+        <strong class="ng-binding">Pdf</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/ppt.svg" title="Ppt">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Ppt">
+        <strong class="ng-binding">Ppt</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/psd.svg" title="Psd">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Psd">
+        <strong class="ng-binding">Psd</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/rtf.svg" title="Rtf">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Rtf">
+        <strong class="ng-binding">Rtf</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/slide.svg" title="Slide">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Slide">
+        <strong class="ng-binding">Slide</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/stypi.svg" title="stypi">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="stypi">
+        <strong class="ng-binding">stypi</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/txt.svg" title="Txt">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Txt">
+        <strong class="ng-binding">Txt</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/unknown.svg" title="Unknown">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Unknown">
+        <strong class="ng-binding">Unknown</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/video.svg" title="Video">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Video">
+        <strong class="ng-binding">Video</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/visio.svg" title="Visio">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Visio">
+        <strong class="ng-binding">Visio</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/webex.svg" title="Webex">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Webex">
+        <strong class="ng-binding">Webex</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/word.svg" title="Word">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Word">
+        <strong class="ng-binding">Word</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/xml.svg" title="Xml">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Xml">
+        <strong class="ng-binding">Xml</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files --><div ng-repeat="file in set.files" class="sg-icon dib ng-scope">
+    <div class="sg-icon-art sg-icn--doc pos-rel center">
+        <img class="pos-rel center" src="../../stylesheets/assets/icons/doctype/zip.svg" title="Zip">
+    </div>
+    <p class="tc mts mbl caps text-truncate" title="Zip">
+        <strong class="ng-binding">Zip</strong>
+    </p>
+</div><!-- end ngRepeat: file in set.files -->
+</div><!-- end ngIf: set.isFile -->
+
+</article>
+
+</div><!-- end ngRepeat: set in iconSets -->
+
+</section>
+
+<section id="sg-resources" class="grid pos-rel bg-sct-med-drk">
+    <article class="grid-cell grid-cell--center pvxx tc">
+        <a href="assets/S1AppGuidelines.pdf" title="Download Guidelines" target="_blank" class="sg-dwn brm db">
+            <img class="grayscale" src="../../stylesheets/assets/icons/doctype/pdf.svg" title="PDF">
+            <p class="tc mts caps">Download Guidelines</p>
+        </a>
+    </article>
+</section>
+
+</div><!-- end ngIf: currentNav == 'style' -->
+<!-- ngIf: currentNav == 'examples' -->
+<!-- ngIf: currentNav == 'sandbox' -->
+</div>
+
+<footer class="bg-5 pos-rel border-top border--8">
+    <article class="db phxx ptxx fn-ns fl-l fn-m tc tl-l">
+        <img src="assets/R&amp;DUX_Logo.png" alt="R&amp;D UX" width="75" height="65">
+    </article>
+    <article class="phxx ptx pbxx tc tr-l">
+        <p class="mtn mbs f4 text-color-5">© Copyright 2014 Salesforce User Experience. <a href="http://www.salesforce.com/company/legal/intellectual.jsp"><span class="text-blue">All rights reserved</span></a>.</p>
+        <p class="mtn mbs f6 text-color-3">Salesforce.com, Inc. The Landmark @ One Market, Suite 300, San Francisco, CA, 94105, United States</p>
+        <p class="mtn mbs f6 text-color-3">Version 1.5. Last Updated on 06/27/2014.</p>
+    </article>
+</footer>
+</div>
+
+<script src="jquery.min.js"></script>
+
+<script src="angular.min.js"></script>
+
+<script src="localytics.js"></script>
+
+<script src="module.js"></script>
+
+<script src="angular-templates.js"></script>
+
+
+
+
+<div id="window-resizer-tooltip"><a href="#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div></body>
+</html>
