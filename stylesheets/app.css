@@ -12536,3 +12536,67 @@ html:hover [class^="ss-"] {
 .ss-standard-calendardelete:before, .ss-standard-calendardelete.right:after {
   content: '';
 }
+
+/* line 1, ../sass/_custom.scss */
+.appiphony-brand {
+  width: 132px;
+  opacity: .3;
+}
+
+/* line 6, ../sass/_custom.scss */
+.fixed-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+/* line 13, ../sass/_custom.scss */
+.iphone-frame .sg-phone--content {
+  padding-bottom: 45px;
+}
+
+/* line 18, ../sass/_custom.scss */
+.bot-t {
+  border-top: 1px solid dadee2;
+}
+
+/* line 24, ../sass/_custom.scss */
+.flag--top.redundant .flag--checkbox {
+  position: relative;
+}
+/* line 26, ../sass/_custom.scss */
+.flag--top.redundant .flag--checkbox:after {
+  content: "";
+  position: absolute;
+  right: 6;
+  height: 10px;
+  width: 10px;
+  background: #43b66a;
+  top: 6;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+/* line 39, ../sass/_custom.scss */
+.flag--top .flag--checkbox, .flag--top .flag--radio {
+  vertical-align: top;
+  display: table-cell;
+}
+
+/* line 46, ../sass/_custom.scss */
+.notifications[data-notification-count].item-count {
+  position: relative;
+}
+/* line 48, ../sass/_custom.scss */
+.notifications[data-notification-count].item-count:after {
+  content: attr(data-notification-count);
+  position: absolute;
+  top: -8px;
+  right: -14px;
+  padding: 2px 4px;
+  border-radius: 9999px;
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 12px;
+  background-color: #9faab5;
+  color: white !important;
+  border: 2px solid #fff;
+}

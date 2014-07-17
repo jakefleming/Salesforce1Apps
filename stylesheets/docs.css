@@ -1,0 +1,12 @@
+/* line 1, ../sass/docs.scss */
+.iphone-frame {
+  height: 568px;
+  width: 320px;
+  border: 0px;
+  overflow-y: hidden;
+}
+/* line 6, ../sass/docs.scss */
+.iphone-frame .sg-phone--content {
+  height: 504px;
+  overflow-y: scroll;
+}

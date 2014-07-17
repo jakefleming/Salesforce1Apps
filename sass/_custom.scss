@@ -1,0 +1,62 @@
+.appiphony-brand {
+  width: 132px;
+  opacity: .3;
+}
+
+.fixed-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.iphone-frame {
+  .sg-phone--content {
+    padding-bottom: 45px;
+  }
+}
+
+.bot-t {
+  border-top: 1px solid dadee2;
+}
+
+.flag--top {
+  &.redundant {
+    .flag--checkbox {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        right: 6;
+        height: 10px;
+        width: 10px;
+        background: #43b66a;
+        top: 6;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+      }
+    }
+  }
+  .flag--checkbox, .flag--radio {
+    vertical-align: top;
+    display: table-cell;
+  }
+}
+
+.notifications[data-notification-count] {
+  &.item-count {
+    position:relative;
+    &:after {
+      content: attr(data-notification-count);
+      position: absolute;
+      top: -8px;
+      right: -14px;
+      padding: 2px 4px;
+      border-radius: 9999px;
+      font-family: 'ProximaNova', sans-serif;
+      font-size: 12px;
+      background-color: #9faab5;
+      color: white !important;
+      border: 2px solid #fff;
+    }
+  }
+}
