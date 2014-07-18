@@ -2059,55 +2059,55 @@ hr, .divider {
 /* line 1379, ../sass/_styles.scss */
 .icon--account {
   background-color: #7f8de1;
-  background-image: url(assets/icons/standard/account.svg);
+  background-image: url(../stylesheets/assets/icons/standard/account.svg);
 }
 
 /* line 1383, ../sass/_styles.scss */
 .icon--campaign {
   background-color: #f49756;
-  background-image: url(assets/icons/standard/campaign.svg);
+  background-image: url(../stylesheets/assets/icons/standard/campaign.svg);
 }
 
 /* line 1387, ../sass/_styles.scss */
 .icon--campaign-members {
   background-color: #f49756;
-  background-image: url(assets/icons/standard/campaign_members.svg);
+  background-image: url(../stylesheets/assets/icons/standard/campaign_members.svg);
 }
 
 /* line 1391, ../sass/_styles.scss */
 .icon--case {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/case.svg);
+  background-image: url(../stylesheets/assets/icons/standard/case.svg);
 }
 
 /* line 1395, ../sass/_styles.scss */
 .icon--contact {
   background-color: #a094ed;
-  background-image: url(assets/icons/standard/contact.svg);
+  background-image: url(../stylesheets/assets/icons/standard/contact.svg);
 }
 
 /* line 1399, ../sass/_styles.scss */
 .icon--contract {
   background-color: #6ec06e;
-  background-image: url(assets/icons/standard/contract.svg);
+  background-image: url(../stylesheets/assets/icons/standard/contract.svg);
 }
 
 /* line 1403, ../sass/_styles.scss */
 .icon--dashboard {
   background-color: #ef6e64;
-  background-image: url(assets/icons/standard/dashboard.svg);
+  background-image: url(../stylesheets/assets/icons/standard/dashboard.svg);
 }
 
 /* line 1407, ../sass/_styles.scss */
 .icon--document {
   background-color: #09a0a0;
-  background-image: url(assets/icons/standard/document.svg);
+  background-image: url(../stylesheets/assets/icons/standard/document.svg);
 }
 
 /* line 1411, ../sass/_styles.scss */
 .icon--forecast {
   background-color: #7774d5;
-  background-image: url(assets/icons/standard/forecast.svg);
+  background-image: url(../stylesheets/assets/icons/standard/forecast.svg);
 }
 
 /* line 1415, ../sass/_styles.scss */
@@ -2118,43 +2118,43 @@ hr, .divider {
 /* line 1418, ../sass/_styles.scss */
 .icon--invoice {
   background-color: #17a380;
-  background-image: url(assets/icons/standard/invoice.svg);
+  background-image: url(../stylesheets/assets/icons/standard/invoice.svg);
 }
 
 /* line 1422, ../sass/_styles.scss */
 .icon--lead {
   background-color: #ed7e58;
-  background-image: url(assets/icons/standard/lead.svg);
+  background-image: url(../stylesheets/assets/icons/standard/lead.svg);
 }
 
 /* line 1426, ../sass/_styles.scss */
 .icon--opportunity {
   background-color: #fcb95b;
-  background-image: url(assets/icons/standard/opportunity.svg);
+  background-image: url(../stylesheets/assets/icons/standard/opportunity.svg);
 }
 
 /* line 1430, ../sass/_styles.scss */
 .icon--orders {
   background-color: #769ed9;
-  background-image: url(assets/icons/standard/orders.svg);
+  background-image: url(../stylesheets/assets/icons/standard/orders.svg);
 }
 
 /* line 1434, ../sass/_styles.scss */
 .icon--portal {
   background-color: #aec770;
-  background-image: url(assets/icons/standard/portal.svg);
+  background-image: url(../stylesheets/assets/icons/standard/portal.svg);
 }
 
 /* line 1438, ../sass/_styles.scss */
 .icon--product {
   background-color: #b781d3;
-  background-image: url(assets/icons/standard/product.svg);
+  background-image: url(../stylesheets/assets/icons/standard/product.svg);
 }
 
 /* line 1442, ../sass/_styles.scss */
 .icon--record {
   background-color: #7dc37d;
-  background-image: url(assets/icons/standard/record.svg);
+  background-image: url(../stylesheets/assets/icons/standard/record.svg);
 }
 
 /* line 1446, ../sass/_styles.scss */
@@ -2165,19 +2165,19 @@ hr, .divider {
 /* line 1449, ../sass/_styles.scss */
 .icon--solution {
   background-color: #8fc972;
-  background-image: url(assets/icons/standard/solution.svg);
+  background-image: url(../stylesheets/assets/icons/standard/solution.svg);
 }
 
 /* line 1453, ../sass/_styles.scss */
 .icon--topic {
   background-color: #56aadf;
-  background-image: url(assets/icons/standard/topic.svg);
+  background-image: url(../stylesheets/assets/icons/standard/topic.svg);
 }
 
 /* line 1457, ../sass/_styles.scss */
 .icon--transcript {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/transcript.svg);
+  background-image: url(../stylesheets/assets/icons/standard/transcript.svg);
 }
 
 /* Standard Misc
@@ -2185,272 +2185,272 @@ hr, .divider {
 /* line 1463, ../sass/_styles.scss */
 .icon--avatar {
   background-color: #62b7ed;
-  background-image: url(assets/icons/standard/avatar.svg);
+  background-image: url(../stylesheets/assets/icons/standard/avatar.svg);
 }
 
 /* line 1467, ../sass/_styles.scss */
 .icon--approval {
   background-color: #50cc7a;
-  background-image: url(assets/icons/standard/approval.svg);
+  background-image: url(../stylesheets/assets/icons/standard/approval.svg);
 }
 
 /* line 1471, ../sass/_styles.scss */
 .icon--apps {
   background-color: #3c97dd;
-  background-image: url(assets/icons/standard/apps.svg);
+  background-image: url(../stylesheets/assets/icons/standard/apps.svg);
 }
 
 /* line 1475, ../sass/_styles.scss */
 .icon--connected-apps-admins {
   background-color: #9895ee;
-  background-image: url(assets/icons/standard/connected_apps_admins.svg);
+  background-image: url(../stylesheets/assets/icons/standard/connected_apps_admins.svg);
 }
 
 /* line 1479, ../sass/_styles.scss */
 .icon--calibration {
   background-color: #47cfd2;
-  background-image: url(assets/icons/standard/calibration.svg);
+  background-image: url(../stylesheets/assets/icons/standard/calibration.svg);
 }
 
 /* line 1483, ../sass/_styles.scss */
 .icon--collaborationgroup {
   background-color: #779ef2;
-  background-image: url(assets/icons/standard/groups_120.svg);
+  background-image: url(../stylesheets/assets/icons/standard/groups_120.svg);
 }
 
 /* line 1487, ../sass/_styles.scss */
 .icon--coaching {
   background-color: #f67594;
-  background-image: url(assets/icons/standard/coaching.svg);
+  background-image: url(../stylesheets/assets/icons/standard/coaching.svg);
 }
 
 /* line 1491, ../sass/_styles.scss */
 .icon--drafts {
   background-color: #6ca1e9;
-  background-image: url(assets/icons/standard/drafts.svg);
+  background-image: url(../stylesheets/assets/icons/standard/drafts.svg);
 }
 
 /* line 1495, ../sass/_styles.scss */
 .icon--email {
   background-color: #95aec5;
-  background-image: url(assets/icons/standard/email.svg);
+  background-image: url(../stylesheets/assets/icons/standard/email.svg);
 }
 
 /* line 1499, ../sass/_styles.scss */
 .icon--event {
   background-color: #eb7092;
-  background-image: url(assets/icons/standard/event.svg);
+  background-image: url(../stylesheets/assets/icons/standard/event.svg);
 }
 
 /* line 1503, ../sass/_styles.scss */
 .icon--endorsement {
   background-color: #8b9ae3;
-  background-image: url(assets/icons/standard/endorsement.svg);
+  background-image: url(../stylesheets/assets/icons/standard/endorsement.svg);
 }
 
 /* line 1507, ../sass/_styles.scss */
 .icon--feed {
   background-color: #62b7ed;
-  background-image: url(assets/icons/standard/feed.svg);
+  background-image: url(../stylesheets/assets/icons/standard/feed.svg);
 }
 
 /* line 1511, ../sass/_styles.scss */
 .icon--feedback {
   background-color: #6da1ea;
-  background-image: url(assets/icons/standard/feedback.svg);
+  background-image: url(../stylesheets/assets/icons/standard/feedback.svg);
 }
 
 /* line 1515, ../sass/_styles.scss */
 .icon--file {
   background-color: #baac93;
-  background-image: url(assets/icons/standard/file.svg);
+  background-image: url(../stylesheets/assets/icons/standard/file.svg);
 }
 
 /* line 1519, ../sass/_styles.scss */
 .icon--goals {
   background-color: #7fc574;
-  background-image: url(assets/icons/standard/goals.svg);
+  background-image: url(../stylesheets/assets/icons/standard/goals.svg);
 }
 
 /* line 1523, ../sass/_styles.scss */
 .icon--groups {
   background-color: #779ef2;
-  background-image: url(assets/icons/standard/groups.svg);
+  background-image: url(../stylesheets/assets/icons/standard/groups.svg);
 }
 
 /* line 1527, ../sass/_styles.scss */
 .icon--link {
   background-color: #7a9ae6;
-  background-image: url(assets/icons/standard/link.svg);
+  background-image: url(../stylesheets/assets/icons/standard/link.svg);
 }
 
 /* line 1531, ../sass/_styles.scss */
 .icon--note {
   background-color: #e6d478;
-  background-image: url(assets/icons/standard/note.svg);
+  background-image: url(../stylesheets/assets/icons/standard/note.svg);
 }
 
 /* line 1535, ../sass/_styles.scss */
 .icon--people {
   background-color: #34becd;
-  background-image: url(assets/icons/standard/people.svg);
+  background-image: url(../stylesheets/assets/icons/standard/people.svg);
 }
 
 /* line 1539, ../sass/_styles.scss */
 .icon--performance {
   background-color: #f8b156;
-  background-image: url(assets/icons/standard/performance.svg);
+  background-image: url(../stylesheets/assets/icons/standard/performance.svg);
 }
 
 /* line 1543, ../sass/_styles.scss */
 .icon--photo {
   background-color: #d7d1d1;
-  background-image: url(assets/icons/standard/photo.svg);
+  background-image: url(../stylesheets/assets/icons/standard/photo.svg);
 }
 
 /* line 1547, ../sass/_styles.scss */
 .icon--poll {
   background-color: #699be1;
-  background-image: url(assets/icons/standard/poll.svg);
+  background-image: url(../stylesheets/assets/icons/standard/poll.svg);
 }
 
 /* line 1551, ../sass/_styles.scss */
 .icon--post {
   background-color: #65cae4;
-  background-image: url(assets/icons/standard/post.svg);
+  background-image: url(../stylesheets/assets/icons/standard/post.svg);
 }
 
 /* line 1555, ../sass/_styles.scss */
 .icon--question-best {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/question_best.svg);
+  background-image: url(../stylesheets/assets/icons/standard/question_best.svg);
 }
 
 /* line 1559, ../sass/_styles.scss */
 .icon--question-feed {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/question_feed.svg);
+  background-image: url(../stylesheets/assets/icons/standard/question_feed.svg);
 }
 
 /* line 1563, ../sass/_styles.scss */
 .icon--quotes {
   background-color: #88c651;
-  background-image: url(assets/icons/standard/quotes.svg);
+  background-image: url(../stylesheets/assets/icons/standard/quotes.svg);
 }
 
 /* line 1567, ../sass/_styles.scss */
 .icon--record {
   background-color: #7dc37d;
-  background-image: url(assets/icons/standard/record.svg);
+  background-image: url(../stylesheets/assets/icons/standard/record.svg);
 }
 
 /* line 1571, ../sass/_styles.scss */
 .icon--report {
   background-color: #f77373;
-  background-image: url(assets/icons/standard/report.svg);
+  background-image: url(../stylesheets/assets/icons/standard/report.svg);
 }
 
 /* line 1575, ../sass/_styles.scss */
 .icon--recent {
   background-color: #6ca1e9;
-  background-image: url(assets/icons/standard/recent.svg);
+  background-image: url(../stylesheets/assets/icons/standard/recent.svg);
 }
 
 /* line 1579, ../sass/_styles.scss */
 .icon--related-list {
   background-color: #59bcab;
-  background-image: url(assets/icons/standard/related_list.svg);
+  background-image: url(../stylesheets/assets/icons/standard/related_list.svg);
 }
 
 /* line 1583, ../sass/_styles.scss */
 .icon--scan-card {
   background-color: #f39e58;
-  background-image: url(assets/icons/standard/scan_card.svg);
+  background-image: url(../stylesheets/assets/icons/standard/scan_card.svg);
 }
 
 /* line 1587, ../sass/_styles.scss */
 .icon--skill-entity {
   background-color: #8b9ae3;
-  background-image: url(assets/icons/standard/skill_entity.svg);
+  background-image: url(../stylesheets/assets/icons/standard/skill_entity.svg);
 }
 
 /* line 1591, ../sass/_styles.scss */
 .icon--social {
   background-color: #ea74a2;
-  background-image: url(assets/icons/standard/social_post.svg);
+  background-image: url(../stylesheets/assets/icons/standard/social_post.svg);
 }
 
 /* line 1595, ../sass/_styles.scss */
 .icon--task {
   background-color: #4bc076;
-  background-image: url(assets/icons/standard/task.svg);
+  background-image: url(../stylesheets/assets/icons/standard/task.svg);
 }
 
 /* line 1599, ../sass/_styles.scss */
 .icon--thanks {
   background-color: #e9696e;
-  background-image: url(assets/icons/standard/thanks.svg);
+  background-image: url(../stylesheets/assets/icons/standard/thanks.svg);
 }
 
 /* line 1603, ../sass/_styles.scss */
 .icon--today {
   background-color: #ef7ead;
-  background-image: url(assets/icons/standard/today.svg);
+  background-image: url(../stylesheets/assets/icons/standard/today.svg);
 }
 
 /* line 1607, ../sass/_styles.scss */
 .icon--user {
   background-color: #34becd;
-  background-image: url(assets/icons/standard/user.svg);
+  background-image: url(../stylesheets/assets/icons/standard/user.svg);
 }
 
 /* line 1611, ../sass/_styles.scss */
 .icon--canvas {
   background-color: #8199af;
-  background-image: url(assets/icons/standard/canvas.svg);
+  background-image: url(../stylesheets/assets/icons/standard/canvas.svg);
 }
 
 /* line 1615, ../sass/_styles.scss */
 .icon--custom {
   background-color: #8199af;
-  background-image: url(assets/icons/standard/custom.svg);
+  background-image: url(../stylesheets/assets/icons/standard/custom.svg);
 }
 
 /* line 1619, ../sass/_styles.scss */
 .icon--default {
   background-color: #8199af;
-  background-image: url(assets/icons/standard/default.svg);
+  background-image: url(../stylesheets/assets/icons/standard/default.svg);
 }
 
 /* line 1623, ../sass/_styles.scss */
 .icon--empty {
   background-color: #8199af;
-  background-image: url(assets/icons/standard/empty.svg);
+  background-image: url(../stylesheets/assets/icons/standard/empty.svg);
 }
 
 /* Loading Icons */
 /* line 1628, ../sass/_styles.scss */
 .icon--avatar-loading {
   background-color: #b8c3ce;
-  background-image: url(assets/icons/standard/avatar_loading.svg);
+  background-image: url(../stylesheets/assets/icons/standard/avatar_loading.svg);
 }
 
 /* line 1632, ../sass/_styles.scss */
 .icon--blank-loading {
   background-color: #b8c3ce;
-  background-image: url(assets/icons/standard/blank_loading_120.png);
+  background-image: url(../stylesheets/assets/icons/standard/blank_loading_120.png);
 }
 
 /* line 1636, ../sass/_styles.scss */
 .icon--groups-loading {
   background-color: #b8c3ce;
-  background-image: url(assets/icons/standard/group_loading.svg);
+  background-image: url(../stylesheets/assets/icons/standard/group_loading.svg);
 }
 
 /* line 1640, ../sass/_styles.scss */
 .icon--thanks-loading {
   background-color: #b8c3ce;
-  background-image: url(assets/icons/standard/thanks_loading.svg);
+  background-image: url(../stylesheets/assets/icons/standard/thanks_loading.svg);
 }
 
 /* Standard 3rd Party
@@ -2458,25 +2458,25 @@ hr, .divider {
 /* line 1646, ../sass/_styles.scss */
 .icon--files {
   background-color: #5bb6ee;
-  background-image: url(assets/icons/standard/chatterbox.svg);
+  background-image: url(../stylesheets/assets/icons/standard/chatterbox.svg);
 }
 
 /* line 1650, ../sass/_styles.scss */
 .icon--concur {
   background-color: #4cc3c7;
-  background-image: url(assets/icons/standard/concur.svg);
+  background-image: url(../stylesheets/assets/icons/standard/concur.svg);
 }
 
 /* line 1654, ../sass/_styles.scss */
 .icon--dropbox {
   background-color: #52aef9;
-  background-image: url(assets/icons/standard/dropbox.svg);
+  background-image: url(../stylesheets/assets/icons/standard/dropbox.svg);
 }
 
 /* line 1658, ../sass/_styles.scss */
 .icon--evernote {
   background-color: #86c86f;
-  background-image: url(assets/icons/standard/evernote.svg);
+  background-image: url(../stylesheets/assets/icons/standard/evernote.svg);
 }
 
 /* Standard Case
@@ -2484,61 +2484,61 @@ hr, .divider {
 /* line 1664, ../sass/_styles.scss */
 .icon--answer-best {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/answer_best.svg);
+  background-image: url(../stylesheets/assets/icons/standard/answer_best.svg);
 }
 
 /* line 1668, ../sass/_styles.scss */
 .icon--answer-private {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/answer_private.svg);
+  background-image: url(../stylesheets/assets/icons/standard/answer_private.svg);
 }
 
 /* line 1672, ../sass/_styles.scss */
 .icon--answer-public {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/answer_public.svg);
+  background-image: url(../stylesheets/assets/icons/standard/answer_public.svg);
 }
 
 /* line 1676, ../sass/_styles.scss */
 .icon--article {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/article.svg);
+  background-image: url(../stylesheets/assets/icons/standard/article.svg);
 }
 
 /* line 1680, ../sass/_styles.scss */
 .icon--case-change-status {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/case_change_status.svg);
+  background-image: url(../stylesheets/assets/icons/standard/case_change_status.svg);
 }
 
 /* line 1684, ../sass/_styles.scss */
 .icon--case-comment {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/case_comment.svg);
+  background-image: url(../stylesheets/assets/icons/standard/case_comment.svg);
 }
 
 /* line 1688, ../sass/_styles.scss */
 .icon--case-email {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/email_chatter.svg);
+  background-image: url(../stylesheets/assets/icons/standard/email_chatter.svg);
 }
 
 /* line 1692, ../sass/_styles.scss */
 .icon--case-log-a-call {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/log_a_call_chatter.svg);
+  background-image: url(../stylesheets/assets/icons/standard/log_a_call_chatter.svg);
 }
 
 /* line 1696, ../sass/_styles.scss */
 .icon--case-transcript {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/case_transcript.svg);
+  background-image: url(../stylesheets/assets/icons/standard/case_transcript.svg);
 }
 
 /* line 1700, ../sass/_styles.scss */
 .icon--team-member {
   background-color: #f2cf5b;
-  background-image: url(assets/icons/standard/team_member.svg);
+  background-image: url(../stylesheets/assets/icons/standard/team_member.svg);
 }
 
 /* Standard Custom Icons
@@ -2546,601 +2546,601 @@ hr, .divider {
 /* line 1706, ../sass/_styles.scss */
 .icon--custom-1 {
   background-color: #ff7b84;
-  background-image: url(assets/icons/custom/custom1.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom1.svg);
 }
 
 /* line 1710, ../sass/_styles.scss */
 .icon--custom-2 {
   background-color: #cfd05c;
-  background-image: url(assets/icons/custom/custom2.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom2.svg);
 }
 
 /* line 1714, ../sass/_styles.scss */
 .icon--custom-3 {
   background-color: #ecb46c;
-  background-image: url(assets/icons/custom/custom3.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom3.svg);
 }
 
 /* line 1718, ../sass/_styles.scss */
 .icon--custom-4 {
   background-color: #e1d951;
-  background-image: url(assets/icons/custom/custom4.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom4.svg);
 }
 
 /* line 1722, ../sass/_styles.scss */
 .icon--custom-5 {
   background-color: #9fdb66;
-  background-image: url(assets/icons/custom/custom5.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom5.svg);
 }
 
 /* line 1726, ../sass/_styles.scss */
 .icon--custom-6 {
   background-color: #54c473;
-  background-image: url(assets/icons/custom/custom6.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom6.svg);
 }
 
 /* line 1730, ../sass/_styles.scss */
 .icon--custom-7 {
   background-color: #6a89e5;
-  background-image: url(assets/icons/custom/custom7.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom7.svg);
 }
 
 /* line 1734, ../sass/_styles.scss */
 .icon--custom-8 {
   background-color: #50ceb9;
-  background-image: url(assets/icons/custom/custom8.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom8.svg);
 }
 
 /* line 1738, ../sass/_styles.scss */
 .icon--custom-9 {
   background-color: #6b9ee2;
-  background-image: url(assets/icons/custom/custom9.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom9.svg);
 }
 
 /* line 1742, ../sass/_styles.scss */
 .icon--custom-10 {
   background-color: #6488e3;
-  background-image: url(assets/icons/custom/custom10.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom10.svg);
 }
 
 /* line 1746, ../sass/_styles.scss */
 .icon--custom-11 {
   background-color: #8784ea;
-  background-image: url(assets/icons/custom/custom11.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom11.svg);
 }
 
 /* line 1750, ../sass/_styles.scss */
 .icon--custom-12 {
   background-color: #dc71d1;
-  background-image: url(assets/icons/custom/custom12.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom12.svg);
 }
 
 /* line 1754, ../sass/_styles.scss */
 .icon--custom-13 {
   background-color: #df6184;
-  background-image: url(assets/icons/custom/custom13.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom13.svg);
 }
 
 /* line 1758, ../sass/_styles.scss */
 .icon--custom-14 {
   background-color: #3cc2b3;
-  background-image: url(assets/icons/custom/custom14.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom14.svg);
 }
 
 /* line 1762, ../sass/_styles.scss */
 .icon--custom-15 {
   background-color: #f77e75;
-  background-image: url(assets/icons/custom/custom15.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom15.svg);
 }
 
 /* line 1766, ../sass/_styles.scss */
 .icon--custom-16 {
   background-color: #e9af67;
-  background-image: url(assets/icons/custom/custom16.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom16.svg);
 }
 
 /* line 1770, ../sass/_styles.scss */
 .icon--custom-17 {
   background-color: #acd360;
-  background-image: url(assets/icons/custom/custom17.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom17.svg);
 }
 
 /* line 1774, ../sass/_styles.scss */
 .icon--custom-18 {
   background-color: #4dca76;
-  background-image: url(assets/icons/custom/custom18.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom18.svg);
 }
 
 /* line 1778, ../sass/_styles.scss */
 .icon--custom-19 {
   background-color: #3abeb1;
-  background-image: url(assets/icons/custom/custom19.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom19.svg);
 }
 
 /* line 1782, ../sass/_styles.scss */
 .icon--custom-20 {
   background-color: #48c7c8;
-  background-image: url(assets/icons/custom/custom20.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom20.svg);
 }
 
 /* line 1786, ../sass/_styles.scss */
 .icon--custom-21 {
   background-color: #8a7aed;
-  background-image: url(assets/icons/custom/custom21.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom21.svg);
 }
 
 /* line 1790, ../sass/_styles.scss */
 .icon--custom-22 {
   background-color: #8b85f9;
-  background-image: url(assets/icons/custom/custom22.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom22.svg);
 }
 
 /* line 1794, ../sass/_styles.scss */
 .icon--custom-23 {
   background-color: #b070e6;
-  background-image: url(assets/icons/custom/custom23.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom23.svg);
 }
 
 /* line 1798, ../sass/_styles.scss */
 .icon--custom-24 {
   background-color: #e56798;
-  background-image: url(assets/icons/custom/custom24.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom24.svg);
 }
 
 /* line 1802, ../sass/_styles.scss */
 .icon--custom-25 {
   background-color: #e46fbe;
-  background-image: url(assets/icons/custom/custom25.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom25.svg);
 }
 
 /* line 1806, ../sass/_styles.scss */
 .icon--custom-26 {
   background-color: #7698f0;
-  background-image: url(assets/icons/custom/custom26.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom26.svg);
 }
 
 /* line 1810, ../sass/_styles.scss */
 .icon--custom-27 {
   background-color: #5ab0d2;
-  background-image: url(assets/icons/custom/custom27.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom27.svg);
 }
 
 /* line 1814, ../sass/_styles.scss */
 .icon--custom-28 {
   background-color: #89c059;
-  background-image: url(assets/icons/custom/custom28.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom28.svg);
 }
 
 /* line 1818, ../sass/_styles.scss */
 .icon--custom-29 {
   background-color: #bdd25f;
-  background-image: url(assets/icons/custom/custom29.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom29.svg);
 }
 
 /* line 1822, ../sass/_styles.scss */
 .icon--custom-30 {
   background-color: #f59f71;
-  background-image: url(assets/icons/custom/custom30.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom30.svg);
 }
 
 /* line 1826, ../sass/_styles.scss */
 .icon--custom-31 {
   background-color: #eb687f;
-  background-image: url(assets/icons/custom/custom31.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom31.svg);
 }
 
 /* line 1830, ../sass/_styles.scss */
 .icon--custom-32 {
   background-color: #38c393;
-  background-image: url(assets/icons/custom/custom32.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom32.svg);
 }
 
 /* line 1834, ../sass/_styles.scss */
 .icon--custom-33 {
   background-color: #97cf5d;
-  background-image: url(assets/icons/custom/custom33.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom33.svg);
 }
 
 /* line 1838, ../sass/_styles.scss */
 .icon--custom-34 {
   background-color: #d58a6a;
-  background-image: url(assets/icons/custom/custom34.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom34.svg);
 }
 
 /* line 1842, ../sass/_styles.scss */
 .icon--custom-35 {
   background-color: #e9637e;
-  background-image: url(assets/icons/custom/custom35.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom35.svg);
 }
 
 /* line 1846, ../sass/_styles.scss */
 .icon--custom-36 {
   background-color: #d472d4;
-  background-image: url(assets/icons/custom/custom36.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom36.svg);
 }
 
 /* line 1850, ../sass/_styles.scss */
 .icon--custom-37 {
   background-color: #8c89f2;
-  background-image: url(assets/icons/custom/custom37.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom37.svg);
 }
 
 /* line 1854, ../sass/_styles.scss */
 .icon--custom-38 {
   background-color: #53b6d7;
-  background-image: url(assets/icons/custom/custom38.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom38.svg);
 }
 
 /* line 1858, ../sass/_styles.scss */
 .icon--custom-39 {
   background-color: #4fbe75;
-  background-image: url(assets/icons/custom/custom39.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom39.svg);
 }
 
 /* line 1862, ../sass/_styles.scss */
 .icon--custom-40 {
   background-color: #83c75e;
-  background-image: url(assets/icons/custom/custom40.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom40.svg);
 }
 
 /* line 1866, ../sass/_styles.scss */
 .icon--custom-41 {
   background-color: #43b5b5;
-  background-image: url(assets/icons/custom/custom41.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom41.svg);
 }
 
 /* line 1870, ../sass/_styles.scss */
 .icon--custom-42 {
   background-color: #cfd05b;
-  background-image: url(assets/icons/custom/custom42.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom42.svg);
 }
 
 /* line 1874, ../sass/_styles.scss */
 .icon--custom-43 {
   background-color: #7f93f9;
-  background-image: url(assets/icons/custom/custom43.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom43.svg);
 }
 
 /* line 1878, ../sass/_styles.scss */
 .icon--custom-44 {
   background-color: #c8ca58;
-  background-image: url(assets/icons/custom/custom44.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom44.svg);
 }
 
 /* line 1882, ../sass/_styles.scss */
 .icon--custom-45 {
   background-color: #d95879;
-  background-image: url(assets/icons/custom/custom45.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom45.svg);
 }
 
 /* line 1886, ../sass/_styles.scss */
 .icon--custom-46 {
   background-color: #67a5e7;
-  background-image: url(assets/icons/custom/custom46.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom46.svg);
 }
 
 /* line 1890, ../sass/_styles.scss */
 .icon--custom-47 {
   background-color: #5fcc64;
-  background-image: url(assets/icons/custom/custom47.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom47.svg);
 }
 
 /* line 1894, ../sass/_styles.scss */
 .icon--custom-48 {
   background-color: #ef697f;
-  background-image: url(assets/icons/custom/custom48.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom48.svg);
 }
 
 /* line 1898, ../sass/_styles.scss */
 .icon--custom-49 {
   background-color: #e25c80;
-  background-image: url(assets/icons/custom/custom49.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom49.svg);
 }
 
 /* line 1902, ../sass/_styles.scss */
 .icon--custom-50 {
   background-color: #49bcd3;
-  background-image: url(assets/icons/custom/custom50.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom50.svg);
 }
 
 /* line 1906, ../sass/_styles.scss */
 .icon--custom-51 {
   background-color: #d8c760;
-  background-image: url(assets/icons/custom/custom51.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom51.svg);
 }
 
 /* line 1910, ../sass/_styles.scss */
 .icon--custom-52 {
   background-color: #ee8e6f;
-  background-image: url(assets/icons/custom/custom52.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom52.svg);
 }
 
 /* line 1914, ../sass/_styles.scss */
 .icon--custom-53 {
   background-color: #f36e83;
-  background-image: url(assets/icons/custom/custom53.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom53.svg);
 }
 
 /* line 1918, ../sass/_styles.scss */
 .icon--custom-54 {
   background-color: #ea70b1;
-  background-image: url(assets/icons/custom/custom54.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom54.svg);
 }
 
 /* line 1922, ../sass/_styles.scss */
 .icon--custom-55 {
   background-color: #d66ee0;
-  background-image: url(assets/icons/custom/custom55.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom55.svg);
 }
 
 /* line 1926, ../sass/_styles.scss */
 .icon--custom-56 {
   background-color: #718deb;
-  background-image: url(assets/icons/custom/custom56.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom56.svg);
 }
 
 /* line 1930, ../sass/_styles.scss */
 .icon--custom-57 {
   background-color: #5a9cdd;
-  background-image: url(assets/icons/custom/custom57.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom57.svg);
 }
 
 /* line 1934, ../sass/_styles.scss */
 .icon--custom-58 {
   background-color: #34b59d;
-  background-image: url(assets/icons/custom/custom58.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom58.svg);
 }
 
 /* line 1938, ../sass/_styles.scss */
 .icon--custom-59 {
   background-color: #e3d067;
-  background-image: url(assets/icons/custom/custom59.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom59.svg);
 }
 
 /* line 1942, ../sass/_styles.scss */
 .icon--custom-60 {
   background-color: #bf5a88;
-  background-image: url(assets/icons/custom/custom60.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom60.svg);
 }
 
 /* line 1946, ../sass/_styles.scss */
 .icon--custom-61 {
   background-color: #f57376;
-  background-image: url(assets/icons/custom/custom61.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom61.svg);
 }
 
 /* line 1950, ../sass/_styles.scss */
 .icon--custom-62 {
   background-color: #6b92dc;
-  background-image: url(assets/icons/custom/custom62.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom62.svg);
 }
 
 /* line 1954, ../sass/_styles.scss */
 .icon--custom-63 {
   background-color: #7ccf60;
-  background-image: url(assets/icons/custom/custom63.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom63.svg);
 }
 
 /* line 1958, ../sass/_styles.scss */
 .icon--custom-64 {
   background-color: #618fd8;
-  background-image: url(assets/icons/custom/custom64.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom64.svg);
 }
 
 /* line 1962, ../sass/_styles.scss */
 .icon--custom-65 {
   background-color: #f279ab;
-  background-image: url(assets/icons/custom/custom65.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom65.svg);
 }
 
 /* line 1966, ../sass/_styles.scss */
 .icon--custom-66 {
   background-color: #d8be5f;
-  background-image: url(assets/icons/custom/custom66.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom66.svg);
 }
 
 /* line 1970, ../sass/_styles.scss */
 .icon--custom-67 {
   background-color: #f87d76;
-  background-image: url(assets/icons/custom/custom67.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom67.svg);
 }
 
 /* line 1974, ../sass/_styles.scss */
 .icon--custom-68 {
   background-color: #f26979;
-  background-image: url(assets/icons/custom/custom68.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom68.svg);
 }
 
 /* line 1978, ../sass/_styles.scss */
 .icon--custom-69 {
   background-color: #ed6387;
-  background-image: url(assets/icons/custom/custom69.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom69.svg);
 }
 
 /* line 1982, ../sass/_styles.scss */
 .icon--custom-70 {
   background-color: #e769b4;
-  background-image: url(assets/icons/custom/custom70.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom70.svg);
 }
 
 /* line 1986, ../sass/_styles.scss */
 .icon--custom-71 {
   background-color: #e36ee3;
-  background-image: url(assets/icons/custom/custom71.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom71.svg);
 }
 
 /* line 1990, ../sass/_styles.scss */
 .icon--custom-72 {
   background-color: #8d9bfb;
-  background-image: url(assets/icons/custom/custom72.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom72.svg);
 }
 
 /* line 1994, ../sass/_styles.scss */
 .icon--custom-73 {
   background-color: #679ef0;
-  background-image: url(assets/icons/custom/custom73.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom73.svg);
 }
 
 /* line 1998, ../sass/_styles.scss */
 .icon--custom-74 {
   background-color: #41c8a0;
-  background-image: url(assets/icons/custom/custom74.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom74.svg);
 }
 
 /* line 2002, ../sass/_styles.scss */
 .icon--custom-75 {
   background-color: #cd9f65;
-  background-image: url(assets/icons/custom/custom75.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom75.svg);
 }
 
 /* line 2006, ../sass/_styles.scss */
 .icon--custom-76 {
   background-color: #db6d7a;
-  background-image: url(assets/icons/custom/custom76.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom76.svg);
 }
 
 /* line 2010, ../sass/_styles.scss */
 .icon--custom-77 {
   background-color: #b55d5b;
-  background-image: url(assets/icons/custom/custom77.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom77.svg);
 }
 
 /* line 2014, ../sass/_styles.scss */
 .icon--custom-78 {
   background-color: #5a95dd;
-  background-image: url(assets/icons/custom/custom78.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom78.svg);
 }
 
 /* line 2018, ../sass/_styles.scss */
 .icon--custom-79 {
   background-color: #8ed363;
-  background-image: url(assets/icons/custom/custom79.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom79.svg);
 }
 
 /* line 2022, ../sass/_styles.scss */
 .icon--custom-80 {
   background-color: #659ad5;
-  background-image: url(assets/icons/custom/custom80.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom80.svg);
 }
 
 /* line 2026, ../sass/_styles.scss */
 .icon--custom-81 {
   background-color: #da627f;
-  background-image: url(assets/icons/custom/custom81.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom81.svg);
 }
 
 /* line 2030, ../sass/_styles.scss */
 .icon--custom-82 {
   background-color: #d15b97;
-  background-image: url(assets/icons/custom/custom82.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom82.svg);
 }
 
 /* line 2034, ../sass/_styles.scss */
 .icon--custom-83 {
   background-color: #e7806f;
-  background-image: url(assets/icons/custom/custom83.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom83.svg);
 }
 
 /* line 2038, ../sass/_styles.scss */
 .icon--custom-84 {
   background-color: #f6707b;
-  background-image: url(assets/icons/custom/custom84.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom84.svg);
 }
 
 /* line 2042, ../sass/_styles.scss */
 .icon--custom-85 {
   background-color: #f26891;
-  background-image: url(assets/icons/custom/custom85.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom85.svg);
 }
 
 /* line 2046, ../sass/_styles.scss */
 .icon--custom-86 {
   background-color: #e260ab;
-  background-image: url(assets/icons/custom/custom86.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom86.svg);
 }
 
 /* line 2050, ../sass/_styles.scss */
 .icon--custom-87 {
   background-color: #d876e5;
-  background-image: url(assets/icons/custom/custom87.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom87.svg);
 }
 
 /* line 2054, ../sass/_styles.scss */
 .icon--custom-88 {
   background-color: #996fe6;
-  background-image: url(assets/icons/custom/custom88.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom88.svg);
 }
 
 /* line 2058, ../sass/_styles.scss */
 .icon--custom-89 {
   background-color: #3e99be;
-  background-image: url(assets/icons/custom/custom89.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom89.svg);
 }
 
 /* line 2062, ../sass/_styles.scss */
 .icon--custom-90 {
   background-color: #22a48a;
-  background-image: url(assets/icons/custom/custom90.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom90.svg);
 }
 
 /* line 2066, ../sass/_styles.scss */
 .icon--custom-91 {
   background-color: #bf7b66;
-  background-image: url(assets/icons/custom/custom91.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom91.svg);
 }
 
 /* line 2070, ../sass/_styles.scss */
 .icon--custom-92 {
   background-color: #517e82;
-  background-image: url(assets/icons/custom/custom92.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom92.svg);
 }
 
 /* line 2074, ../sass/_styles.scss */
 .icon--custom-93 {
   background-color: #904d4c;
-  background-image: url(assets/icons/custom/custom93.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom93.svg);
 }
 
 /* line 2078, ../sass/_styles.scss */
 .icon--custom-94 {
   background-color: #439cba;
-  background-image: url(assets/icons/custom/custom94.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom94.svg);
 }
 
 /* line 2082, ../sass/_styles.scss */
 .icon--custom-95 {
   background-color: #8bcf6a;
-  background-image: url(assets/icons/custom/custom95.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom95.svg);
 }
 
 /* line 2086, ../sass/_styles.scss */
 .icon--custom-96 {
   background-color: #6d9de3;
-  background-image: url(assets/icons/custom/custom96.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom96.svg);
 }
 
 /* line 2090, ../sass/_styles.scss */
 .icon--custom-97 {
   background-color: #dd6085;
-  background-image: url(assets/icons/custom/custom97.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom97.svg);
 }
 
 /* line 2094, ../sass/_styles.scss */
 .icon--custom-98 {
   background-color: #e1be5c;
-  background-image: url(assets/icons/custom/custom98.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom98.svg);
 }
 
 /* line 2098, ../sass/_styles.scss */
 .icon--custom-99 {
   background-color: #f0856e;
-  background-image: url(assets/icons/custom/custom99.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom99.svg);
 }
 
 /* line 2102, ../sass/_styles.scss */
 .icon--custom-100 {
   background-color: #e15d76;
-  background-image: url(assets/icons/custom/custom100.svg);
+  background-image: url(../stylesheets/assets/icons/custom/custom100.svg);
 }
 
 /* Sizing
@@ -12537,34 +12537,67 @@ html:hover [class^="ss-"] {
   content: '';
 }
 
-/* line 1, ../sass/_custom.scss */
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("https://s3.amazonaws.com/rev-assets-ui/p/iconfonts/proximanovasoft-regular-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("https://s3.amazonaws.com/rev-assets-ui/p/iconfonts/proximanovasoft-medium-webfont.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("https://s3.amazonaws.com/rev-assets-ui/p/iconfonts/proximanovasoft-semibold-webfont.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("https://s3.amazonaws.com/rev-assets-ui/p/iconfonts/proximanovasoft-bold-webfont.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* line 25, ../sass/_custom.scss */
 .appiphony-brand {
   width: 132px;
   opacity: .3;
 }
 
-/* line 6, ../sass/_custom.scss */
+/* line 30, ../sass/_custom.scss */
+#contact-summary {
+  cursor: pointer;
+}
+
+/* line 34, ../sass/_custom.scss */
 .fixed-bottom {
   position: absolute;
   width: 100%;
   bottom: 0;
 }
 
-/* line 13, ../sass/_custom.scss */
+/* line 41, ../sass/_custom.scss */
 .iphone-frame .sg-phone--content {
   padding-bottom: 45px;
 }
 
-/* line 18, ../sass/_custom.scss */
+/* line 46, ../sass/_custom.scss */
 .bot-t {
   border-top: 1px solid dadee2;
 }
 
-/* line 24, ../sass/_custom.scss */
+/* line 52, ../sass/_custom.scss */
 .flag--top.redundant .flag--checkbox {
   position: relative;
 }
-/* line 26, ../sass/_custom.scss */
+/* line 54, ../sass/_custom.scss */
 .flag--top.redundant .flag--checkbox:after {
   content: "";
   position: absolute;
@@ -12576,17 +12609,17 @@ html:hover [class^="ss-"] {
   border-radius: 50%;
   -webkit-border-radius: 50%;
 }
-/* line 39, ../sass/_custom.scss */
+/* line 67, ../sass/_custom.scss */
 .flag--top .flag--checkbox, .flag--top .flag--radio {
   vertical-align: top;
   display: table-cell;
 }
 
-/* line 46, ../sass/_custom.scss */
+/* line 74, ../sass/_custom.scss */
 .notifications[data-notification-count].item-count {
   position: relative;
 }
-/* line 48, ../sass/_custom.scss */
+/* line 76, ../sass/_custom.scss */
 .notifications[data-notification-count].item-count:after {
   content: attr(data-notification-count);
   position: absolute;
@@ -12599,4 +12632,5 @@ html:hover [class^="ss-"] {
   background-color: #9faab5;
   color: white !important;
   border: 2px solid #fff;
+  min-width: 20px;
 }
