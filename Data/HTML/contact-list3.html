@@ -11,7 +11,7 @@
 <header class="bg-1 ht-44 ng-isolate-scope fixed-bottom bot-t" role="group">
     <ul class="w-100p fl man pan list-horizontal ht-44 tc">
         <li class="pos-rel fl ht-44 size-1of3">
-            <a href="javascript:void(0)" title="Filter List" class="phm ht-44 pam">
+            <a id="filter-search" href="javascript:void(0)" title="Filter List" class="phm ht-44 pam">
                 <span class="icon-utility-sort active--icon-1 text-color-3"></span>
                 <span class="tha">Filter List</span>
             </a>
@@ -161,7 +161,7 @@
             </div>
         </li>
         <div class="tc pam bg-2">
-            <div class="icon-utility-spinner spinning text-color-3 f-18"></div>
+            <div class="icon-utility-spinner spinning text-color-3 f-22"></div>
         </div>
     </ul>
 </section>
@@ -172,11 +172,14 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
+        $('#filter-search').click(function() {
+            window.location = "filter-search3.html";
+        });
         $('#search-contacts').click(function() {
             window.location = "search3.html";
         });
         $('.backButton').click(function() {
-            window.location = "contact-summary2.html";
+            window.location = "contact-summary3.html";
         });
         $('.checkbox').click(function() {
             var counter = parseInt($('.icon-utility-download.item-count').attr('data-notification-count'), 10);
