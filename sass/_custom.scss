@@ -35,6 +35,7 @@
   position: absolute;
   width: 100%;
   bottom: 0;
+  z-index: 1;
 }
 
 .iphone-frame {
@@ -88,4 +89,41 @@
       min-width: 20px;
     }
   }
+}
+
+.bg-global-header {
+  background-color: #2a94d6;
+}
+
+input.input--header-primary {
+  background-color: rgba(0, 0, 0, 0.14);
+  border-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  &:-moz-placeholder {
+    color: rgba(255,255,255,.5);
+  }
+  &::-moz-placeholder {
+    color: rgba(255,255,255,.5);
+  }
+  &:-ms-input-placeholder {
+    color: rgba(255,255,255,.5);
+  }
+  &::-webkit-input-placeholder {
+    color: rgba(255,255,255,.5);
+  }
+}
+
+@-webkit-keyframes spinning {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.spinning {
+  -webkit-animation: spinning .875s linear infinite;
 }

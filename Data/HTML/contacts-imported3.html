@@ -24,7 +24,7 @@
         </li>
         <li class="pos-rel fl ht-44 size-1of3">
             <a id="download-contacts" href="javascript:void(0)" title="Download" class="phm ht-44 pam">
-                <span class="icon-utility-download active--icon-1 text-color-3 notifications item-count" data-notification-count="2"></span>
+                <span class="icon-utility-download active--icon-1 text-color-3 notifications item-count" data-notification-count="0"></span>
                 <span class="tha">Download</span>
             </a>
         </li>
@@ -60,27 +60,37 @@
 
 <section class="sg-phone--content scrollable bg-2 clear ng-scope">
     <header class="bg-1">
-        <li class="flag flag--top active--list-1 pam border-bottom border--3">
+        <li class="flag flag--top active--list-1 pam">
             <div class="flag--image prm">
-                <img src="http://high-impact-prospecting.com/staging/work/wp-content/uploads/2014/01/datadotcom.jpg" width="45" height="45" alt="gt" class="brm">
+                <img src="http://high-impact-prospecting.com/staging/work/wp-content/uploads/2014/01/datadotcom.jpg" width="30" height="30" alt="gt" class="brm mtxs">
             </div>
             <div class="flag--body">
-                <span class="db text-color-1 f3 ng-binding mtxs">Data.com</span>
-                <span class="db text-color-2 f6 ng-binding">1 result</span>
+                <span class="db text-color-1 f3 ng-binding">Data.com</span>
+                <span class="db text-color-2 f6 ng-binding">1 Result</span>
             </div>
         </li>
     </header>
-    <header class="bg-2 border-bottom border--2 pam">
+    <header class="pam ptn bg-1 border-bottom border--3">
         <div id="search-contacts" class="pos-rel">
-            <label class="size-full icon-utility-search pos-abs text-color-3 label--lookup">
+            <label class="size-full icon-utility-close pos-abs text-color-3 label--lookup">
                 <span class="tha">Search by name or email</span>
             </label>
             <input type="text" name="default" placeholder="Search by name or email"
-                   class="size-full ht-44 plm prx pvm brm f4 no-border input--default input--ph-1 input--focus-1" value="John">
+                   class="size-full ht-44 plm prx pvm brm f4 border border--2 input--default input--ph-1 input--focus-1" value="John">
         </div>
     </header>
+    <div class="flag bg-1 border-bottom border--3">
+        <div class="flag--image phm">
+            <span class="text-error icon-utility-check text-success"></span>
+        </div>
+        <div class="flag--body">
+            <h1 class="mvm fw-semibold text-color-1 f4">
+                3 contacts imported
+            </h1>
+        </div>
+    </div>
     <ul class="border-bottom border--3 fw-normal bg-1 man pan ng-isolate-scope">
-        <li class="flag flag--top active--list-1 pam border-bottom border--3">
+        <li class="flag flag--top active--list-1 pam border-bottom border--3 redundant">
             <div class="flag--checkbox prm">
                 <input type="checkbox" class="checkbox checkbox--default checkbox--states-1 brm mrs bg-1 sq-22 a-mid dib" id="checkbox-1a">
             </div>
@@ -105,16 +115,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('#download-contacts').click(function() {
-            window.location = "contacts-imported2.html";
-        });
         $('.backButton').click(function() {
-            window.location = "contact-summary2.html";
+            window.location = "contact-summary3.html";
         });
-        $('.checkbox').click(function() {
-            var counter = parseInt($('.icon-utility-download.item-count').attr('data-notification-count'), 10);
-            counter = $(this).is(':checked') ? counter+1 : counter-1;
-            $('.icon-utility-download.item-count').attr('data-notification-count', counter);
+        $('.icon-utility-close').click(function() {
+            window.location = "contact-list3.html";
         });
     });
 </script>

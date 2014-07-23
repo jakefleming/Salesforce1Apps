@@ -60,23 +60,23 @@
 
 <section class="sg-phone--content scrollable bg-2 clear ng-scope">
 <header class="bg-1">
-    <li class="flag flag--top active--list-1 pam border-bottom border--3">
+    <li class="flag flag--top active--list-1 pam">
         <div class="flag--image prm">
-            <img src="http://high-impact-prospecting.com/staging/work/wp-content/uploads/2014/01/datadotcom.jpg" width="45" height="45" alt="gt" class="brm">
+            <img src="http://high-impact-prospecting.com/staging/work/wp-content/uploads/2014/01/datadotcom.jpg" width="30" height="30" alt="gt" class="brm mtxs">
         </div>
         <div class="flag--body">
-            <span class="db text-color-1 f3 ng-binding mtxs">Data.com</span>
-            <span class="db text-color-2 f6 ng-binding">16 results</span>
+            <span class="db text-color-1 f3 ng-binding">Data.com</span>
+            <span class="db text-color-2 f6 ng-binding">16 Results</span>
         </div>
     </li>
 </header>
-<header class="bg-2 border-bottom border--2 pam">
+<header class="pam ptn bg-1 border-bottom border--3">
     <div id="search-contacts" class="pos-rel">
-        <label class="size-full icon-utility-search pos-abs text-color-3 label--lookup">
+        <label class="size-full icon-utility-close pos-abs text-color-3 label--lookup">
             <span class="tha">Search by name or email</span>
         </label>
         <input type="text" name="default" placeholder="Search by name or email"
-               class="size-full ht-44 plm prx pvm brm f4 no-border input--default input--ph-1 input--focus-1" value="John">
+               class="size-full ht-44 plm prx pvm brm f4 border border--2 input--default input--ph-1 input--focus-1" value="John">
     </div>
 </header>
     <ul class="border-bottom border--3 fw-normal bg-1 man pan ng-isolate-scope">
@@ -346,10 +346,13 @@
 <script>
     $(document).ready(function () {
         $('#filter-search').click(function() {
-            window.location = "filter-search2.html";
+            window.location = "filter-search3.html";
         });
         $('.backButton').click(function() {
-            window.location = "contact-summary2.html";
+            window.location = "contact-summary3.html";
+        });
+        $('.icon-utility-close').click(function() {
+            window.location = "contact-list3.html";
         });
         $('.checkbox').click(function() {
             var counter = parseInt($('.icon-utility-download.item-count').attr('data-notification-count'), 10);

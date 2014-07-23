@@ -33,29 +33,50 @@
 <div class="ht-20 w-100p bg-primary">
     <img src="../../stylesheets/assets/iphone-status-bar-white.png" width="320">
 </div>
-<header class="bg-global-header ht-44 ng-isolate-scope" role="group" placeholder="Search Salesforce">
-    <a href="contact-summary.html" title="Back" class="db mtm fl mlm">
-        <span class="icon-utility-back active--icon-1 text-color-5"></span>
-    </a>
-    <div class="pos-rel size-fill prs plm pvs">
-        <label>
-            <span class="dn">Search</span>
-        </label>
-        <input id="search-contacts" type="text" name="default" placeholder="Search Name or Email" class="size-full phs ht-30 input input--header-primary input--ph-2 input--focus-2">
-    </div>
-</header>
+<section class="sg-phone--header ht-44 clear">
+    <header class="bg-primary ht-44 ng-isolate-scope" role="group">
+        <ul class="fl man pan list-horizontal ht-44">
+            <li class="pos-rel fl ht-44">
+                <a href="javascript:void(0)" title="Navigation" class="phm ht-44 pam backButton">
+                    <span class="icon-utility-back active--icon-1 text-color-5"></span>
+                    <span class="tha">Back</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="fr man pan list-horizontal ht-44">
+            <li class="pos-rel fl ht-44">
+                <a href="javascript:void(0)" title="Notifications" class="phm ht-44 pam">
+        <span class="icon-utility-notification active--icon-1 text-color-5 notifications" data-notification-count="">
+        </span>
+                    <span class="tha"> Notifications</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+</section>
 
 
 
 
 <section class="sg-phone--content scrollable bg-2 clear ng-scope">
-    <header class="bg-2 border-bottom border--2">
-        <div title="Data.com Contacts at The Gap" class="db phm pvs">
-                <span class="dib lh-20 f4 text-color-1">
-                  <strong>Data.com Contacts at The Gap</strong>
-                </span>
-                    <span class="db text-truncate f6 text-color-2">605 items</span>
-                    <span class="db text-truncate f6 text-color-2">Sorted by Last Name A-Z</span>
+    <header class="bg-1">
+        <li class="flag flag--top active--list-1 pam">
+            <div class="flag--image prm">
+                <img src="http://high-impact-prospecting.com/staging/work/wp-content/uploads/2014/01/datadotcom.jpg" width="30" height="30" alt="gt" class="brm mtxs">
+            </div>
+            <div class="flag--body">
+                <span class="db text-color-1 f3 ng-binding">Data.com</span>
+                <span class="db text-color-2 f6 ng-binding">605 Contacts at the Gap</span>
+            </div>
+        </li>
+    </header>
+    <header class="pam ptn bg-1 border-bottom border--3">
+        <div id="search-contacts" class="pos-rel">
+            <label class="size-full icon-utility-search pos-abs text-color-3 label--lookup">
+                <span class="tha">Search by name or email</span>
+            </label>
+            <input type="text" name="default" placeholder="Search by name or email"
+                   class="size-full ht-44 plm prx pvm brm f4 border border--2 input--default input--ph-1 input--focus-1">
         </div>
     </header>
     <ul class="border-bottom border--3 fw-normal bg-1 man pan ng-isolate-scope">
@@ -139,6 +160,9 @@
                 </div>
             </div>
         </li>
+        <div class="tc pam bg-2">
+            <div class="icon-utility-spinner spinning text-color-3 f-18"></div>
+        </div>
     </ul>
 </section>
 
@@ -149,7 +173,10 @@
 <script>
     $(document).ready(function () {
         $('#search-contacts').click(function() {
-            window.location = "search.html";
+            window.location = "search3.html";
+        });
+        $('.backButton').click(function() {
+            window.location = "contact-summary2.html";
         });
         $('.checkbox').click(function() {
             var counter = parseInt($('.icon-utility-download.item-count').attr('data-notification-count'), 10);

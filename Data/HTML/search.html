@@ -12,7 +12,7 @@
     <ul class="w-100p fl man pan list-horizontal ht-44 tc">
         <li class="pos-rel fl ht-44 size-1of3">
             <a href="javascript:void(0)" title="Filter List" class="phm ht-44 pam">
-                <span class="icon-utility-filterList active--icon-1 text-color-3"></span>
+                <span class="icon-utility-sort active--icon-1 text-color-3"></span>
                 <span class="tha">Filter List</span>
             </a>
         </li>
@@ -33,21 +33,17 @@
 <div class="ht-20 w-100p bg-primary">
     <img src="../../stylesheets/assets/iphone-status-bar-white.png" width="320">
 </div>
-<section class="sg-phone--header ht-44 clear">
-    <header class="flag bg-primary ht-44 ng-isolate-scope" role="group" placeholder="Search by Name or Email">
-        <section class="flag--body phs">
-            <label>
-                <span class="tha">Search</span>
-            </label>
-            <input type="text" name="default" placeholder="Search by Name or Email" class="size-full phs ht-30 bg-1 brm f4 no-border input--ph-1 input--focus-1" value="John">
-        </section>
-        <section class="flag--image prs">
-            <a href="javascript:void(0)" title="Cancel" class="btn-header-primary btn--header-primary-active fl brm ht-30 phm">
-                <span class="text-color-5 lh-30 fw-semibold f6">Cancel</span>
-            </a>
-        </section>
-    </header>
-</section>
+<header class="bg-global-header ht-44 ng-isolate-scope" role="group" placeholder="Search Salesforce">
+    <a href="contact-summary.html" title="Back" class="db mtm fl mlm">
+        <span class="icon-utility-back active--icon-1 text-color-5"></span>
+    </a>
+    <div class="pos-rel size-fill prs plm pvs">
+        <label>
+            <span class="dn">Search</span>
+        </label>
+        <input id="search-contacts" type="text" name="default" placeholder="Search Name or Email" class="size-full phs ht-30 input input--header-primary input--ph-2 input--focus-2" value="John">
+    </div>
+</header>
 
 
 

@@ -1592,28 +1592,28 @@ table {
    ========================================================================== */
 @font-face {
   font-family: 'ProximaNova';
-  src: url("https://s3.amazonaws.com/rev-assets-ui/p/iconfonts/proximanovasoft-regular-webfont.ttf") format("truetype");
+  src: url("../stylesheets/fonts/proximanovasoft-regular-webfont.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ProximaNova';
-  src: url("https://s3.amazonaws.com/rev-assets-ui/p/iconfonts/proximanovasoft-medium-webfont.ttf") format("truetype");
+  src: url("../stylesheets/fonts/proximanovasoft-medium-webfont.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ProximaNova';
-  src: url("https://s3.amazonaws.com/rev-assets-ui/p/iconfonts/proximanovasoft-semibold-webfont.ttf") format("truetype");
+  src: url("../stylesheets/fonts/proximanovasoft-semibold-webfont.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ProximaNova';
-  src: url("https://s3.amazonaws.com/rev-assets-ui/p/iconfonts/proximanovasoft-bold-webfont.ttf") format("truetype");
+  src: url("../stylesheets/fonts/proximanovasoft-bold-webfont.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -12581,23 +12581,24 @@ html:hover [class^="ss-"] {
   position: absolute;
   width: 100%;
   bottom: 0;
+  z-index: 1;
 }
 
-/* line 41, ../sass/_custom.scss */
+/* line 42, ../sass/_custom.scss */
 .iphone-frame .sg-phone--content {
   padding-bottom: 45px;
 }
 
-/* line 46, ../sass/_custom.scss */
+/* line 47, ../sass/_custom.scss */
 .bot-t {
   border-top: 1px solid dadee2;
 }
 
-/* line 52, ../sass/_custom.scss */
+/* line 53, ../sass/_custom.scss */
 .flag--top.redundant .flag--checkbox {
   position: relative;
 }
-/* line 54, ../sass/_custom.scss */
+/* line 55, ../sass/_custom.scss */
 .flag--top.redundant .flag--checkbox:after {
   content: "";
   position: absolute;
@@ -12609,17 +12610,17 @@ html:hover [class^="ss-"] {
   border-radius: 50%;
   -webkit-border-radius: 50%;
 }
-/* line 67, ../sass/_custom.scss */
+/* line 68, ../sass/_custom.scss */
 .flag--top .flag--checkbox, .flag--top .flag--radio {
   vertical-align: top;
   display: table-cell;
 }
 
-/* line 74, ../sass/_custom.scss */
+/* line 75, ../sass/_custom.scss */
 .notifications[data-notification-count].item-count {
   position: relative;
 }
-/* line 76, ../sass/_custom.scss */
+/* line 77, ../sass/_custom.scss */
 .notifications[data-notification-count].item-count:after {
   content: attr(data-notification-count);
   position: absolute;
@@ -12633,4 +12634,51 @@ html:hover [class^="ss-"] {
   color: white !important;
   border: 2px solid #fff;
   min-width: 20px;
+}
+
+/* line 94, ../sass/_custom.scss */
+.bg-global-header {
+  background-color: #2a94d6;
+}
+
+/* line 98, ../sass/_custom.scss */
+input.input--header-primary {
+  background-color: rgba(0, 0, 0, 0.14);
+  border-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+/* line 104, ../sass/_custom.scss */
+input.input--header-primary:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 107, ../sass/_custom.scss */
+input.input--header-primary::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 110, ../sass/_custom.scss */
+input.input--header-primary:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 113, ../sass/_custom.scss */
+input.input--header-primary::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes spinning {
+  /* line 119, ../sass/_custom.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 122, ../sass/_custom.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* line 127, ../sass/_custom.scss */
+.spinning {
+  -webkit-animation: spinning .875s linear infinite;
 }
