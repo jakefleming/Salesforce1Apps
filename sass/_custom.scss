@@ -50,11 +50,11 @@
       &:after {
         content: "";
         position: absolute;
-        right: 6;
+        right: 6px;
         height: 10px;
         width: 10px;
         background: #43b66a;
-        top: 6;
+        top: 6px;
         border-radius: 50%;
         -webkit-border-radius: 50%;
       }
@@ -121,4 +121,14 @@ input.input--header-primary {
 
 .spinning {
   -webkit-animation: spinning .875s linear infinite;
+}
+
+@mixin dots {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dots {
+  @include dots;
 }

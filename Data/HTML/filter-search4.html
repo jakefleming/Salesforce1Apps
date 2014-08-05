@@ -1,0 +1,75 @@
+<head>
+    <link href="../../stylesheets/app.css" rel="stylesheet" type="text/css">
+    <link href="../../stylesheets/docs.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="iphone-frame">
+
+
+
+
+<div class="ht-20 w-100p bg-1 ng-scope">
+    <img src="../../stylesheets/assets/iphone-status-bar-black.png" width="320" ng-if="phoneType == 'iphone'" class="ng-scope">
+</div>
+<section class="sg-phone--header ht-44 clear ng-scope">
+    <header class="bg-1 ht-44 border-bottom border--2 tc ng-isolate-scope" role="group" button-left="Cancel" button-right="Post" title="New Post">
+        <a href="contact-list4.html" target="ifrm" title="Close" class="btn-header-secondary btn--header-secondary-active brm fl mts mls phm ht-30">
+            <span class="text-color-2 lh-30 fw-semibold f6 ng-binding">Cancel</span>
+        </a>
+        <a id="apply-filter" href="javascript:void(0)" title="Submit" class="btn-header-secondary btn--header-secondary-active brm ht-30 phm pos-rel fr mts mrs">
+            <span class="text-color-2 lh-30 fw-semibold f6 ng-binding">Apply</span>
+        </a>
+        <b><span class="text-color-2 dib lh-44 fw-semibold f-19 ng-binding">Filter</span></b>
+    </header>
+</section>
+
+
+
+<section class="sg-phone--content scrollable bg-2 clear ng-scope pam">
+    <label label="Name" placeholder="" value="" class="ng-isolate-scope">
+        <span class="db mbs f5 text-color-2 ng-binding">Name or Email</span>
+        <input type="text" name="default" value="John" placeholder="" class="mbm size-full pam brm f4 no-border input--default input--ph-1 input--focus-1">
+    </label>
+    <label label="Title" placeholder="" value="" class="ng-isolate-scope">
+        <span class="db mbs f5 text-color-2 ng-binding">Title</span>
+        <input type="text" name="default" value="" placeholder="" class="mbm size-full pam brm f4 no-border input--default input--ph-1 input--focus-1">
+    </label>
+    <label label="ZIP" placeholder="" value="" class="ng-isolate-scope">
+        <span class="db mbs f5 text-color-2 ng-binding">Postal/Zip code</span>
+        <input type="text" name="default" value="" placeholder="" class="mbm size-full pam brm f4 no-border input--default input--ph-1 input--focus-1">
+    </label>
+    <div class="mbm pos-rel ng-isolate-scope" value="All" label="Level">
+        <label class="dib mbs f5 text-color-2 size-full ng-binding">Level</label>
+        <span class="label--icon-r-out icon-utility-down size-full lh-14 text-color-3"></span>
+        <a href="javascript:void(0)" name="picklist" title="Picklist Value" class="size-full ht-44 lh-14 plm prx pvm bg-1 no-border brm input">
+            <span class="text-color-1 dib ng-binding">All</span>
+        </a>
+    </div>
+    <div class="mbm pos-rel ng-isolate-scope" value="All" label="Department">
+        <label class="dib mbs f5 text-color-2 size-full ng-binding">Department</label>
+        <span class="label--icon-r-out icon-utility-down size-full lh-14 text-color-3"></span>
+        <a href="javascript:void(0)" name="picklist" title="Picklist Value" class="size-full ht-44 lh-14 plm prx pvm bg-1 no-border brm input">
+            <span class="text-color-1 dib ng-binding">2 items</span>
+        </a>
+    </div>
+
+</section>
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#apply-filter').click(function() {
+            window.location = "filter-applied4.html";
+        });
+        $('.cancelButton').click(function() {
+            window.location = "search4.html";
+        });
+    });
+</script>
+
+
+
+</body>
