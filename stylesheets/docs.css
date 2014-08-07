@@ -16,3 +16,8 @@
   width: 132px;
   opacity: .3;
 }
+
+/* line 18, ../sass/docs.scss */
+ol ol, ol ul, ul ol, ul ul {
+  padding-left: 20px;
+}

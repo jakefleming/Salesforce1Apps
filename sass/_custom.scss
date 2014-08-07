@@ -132,3 +132,54 @@ input.input--header-primary {
 .dots {
   @include dots;
 }
+
+.error-mc-message {
+  display:none;
+}
+
+.error-mc {
+//  @extend .bg-2;
+
+  .error-mc-message {
+    display: block;
+  }
+  .mc-message {
+    display: none;
+  }
+  .flag {
+    .flag--image {
+      position: relative;
+      &:after {
+        position: absolute;
+        font-family: "icomoon";
+        content: "\e024";
+        right: 4px;
+        top: -2px;
+        color: #c06057;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+//        border: 2px solid #f0f1f2;
+//        background: #f0f1f2;
+        border: 2px solid #fff;
+        background: #fff;
+      }
+      img {
+      }
+    }
+  }
+}
+
+.dn-i {
+  display: none!important;
+}
+
+/*fixes for salesforce*/
+#contactList {
+  position: relative;
+  height: 30px;
+  overflow-y: scroll;
+}
+
+ul, li, ul li {
+  margin-left: 0px;
+}

@@ -102,14 +102,17 @@
     </div>
 
 <div id="AboutThis">
-    <article id="contact-summary" class="mam bg-1 brm ng-isolate-scope" body="Feedback from everyone else is welcome also! Please let me know what you think. I am desperate for your approval and appreciation. Shower me with love and affection. Fishing for compliments here." actor="Jenny Hancock" actorimage="http://placekitten.com/45/45">
+    <article id="contact-summary" class="mam bg-1 brm ng-isolate-scope error-mc" body="Feedback from everyone else is welcome also! Please let me know what you think. I am desperate for your approval and appreciation. Shower me with love and affection. Fishing for compliments here." actor="Jenny Hancock" actorimage="http://placekitten.com/45/45">
         <li class="flag flag--top active--list-1 pam db mw-100p clearfix">
-            <div class="flag--image prm fl">
+             <div class="flag--image prm fl">
                 <img src="http://high-impact-prospecting.com/staging/work/wp-content/uploads/2014/01/datadotcom.jpg" width="30" height="30" alt="gt" class="brm mtxs">
             </div>
-            <div class="flag--body db">
-                <span class="db text-color-1 f3 ng-binding">Data.com</span>
-                <span class="db text-color-2 f6 ng-binding dots mw-100p">605 contacts at the gap</span>
+            <div class="flag--body db error-mc-message mtxs">
+                <span class="db text-color-2 f6 ng-binding">You need a Data.com license to view and import records</span>
+            </div>
+            <div class="flag--body db mc-message">
+                <span class="db text-color-1 f3 ng-binding">Data.com - 20,000 contacts</span>
+                <span class="db text-color-2 f6 ng-binding dots mw-100p">at The Gap, Inc of Western Europe and stuff ya knowat The Gap, Inc of Western Europe and stuff ya knowat The Gap, Inc of Western Europe and stuff ya knowat The Gap, Inc of Western Europe and stuff ya knowat The Gap, Inc of Western Europe and stuff ya knowat The Gap, Inc of Western Europe and stuff ya knowat The Gap, Inc of Western Europe and stuff ya know</span>
             </div>
         </li>
     </article>
@@ -153,7 +156,7 @@
 <script>
     $(document).ready(function () {
         $('#contact-summary').click(function() {
-            window.location = "contact-list4.html";
+            window.location = "contact-list4-error-mc2.html";
         });
         $('.cancelButton').click(function() {
             window.location = "contact-summary4.html";

@@ -12683,3 +12683,52 @@ input.input--header-primary::-webkit-input-placeholder {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* line 136, ../sass/_custom.scss */
+.error-mc-message {
+  display: none;
+}
+
+/* line 143, ../sass/_custom.scss */
+.error-mc .error-mc-message {
+  display: block;
+}
+/* line 146, ../sass/_custom.scss */
+.error-mc .mc-message {
+  display: none;
+}
+/* line 150, ../sass/_custom.scss */
+.error-mc .flag .flag--image {
+  position: relative;
+}
+/* line 152, ../sass/_custom.scss */
+.error-mc .flag .flag--image:after {
+  position: absolute;
+  font-family: "icomoon";
+  content: "\e024";
+  right: 4px;
+  top: -2px;
+  color: #c06057;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border: 2px solid #fff;
+  background: #fff;
+}
+
+/* line 172, ../sass/_custom.scss */
+.dn-i {
+  display: none !important;
+}
+
+/*fixes for salesforce*/
+/* line 177, ../sass/_custom.scss */
+#contactList {
+  position: relative;
+  height: 30px;
+  overflow-y: scroll;
+}
+
+/* line 183, ../sass/_custom.scss */
+ul, li, ul li {
+  margin-left: 0px;
+}
