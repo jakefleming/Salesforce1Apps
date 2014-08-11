@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="babd4dcc-d256-4f17-8382-1987147935e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/absolute-test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/contact-list5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/contact-summary5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/contacts-imported5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/filter-applied5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/filter-search5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/frame5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/junk.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" afterPath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/docs.scssc" afterPath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/docs.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_custom.scss" afterPath="$PROJECT_DIR$/sass/_custom.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/app.css" afterPath="$PROJECT_DIR$/stylesheets/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/docs.css" afterPath="$PROJECT_DIR$/stylesheets/docs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/docs.scss" afterPath="$PROJECT_DIR$/sass/docs.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Salesforce1Apps.iws" />
@@ -86,8 +73,8 @@
               <file leaf-file-name="contacts-imported5.html" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/Data/HTML/contacts-imported5.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.36057693" vertical-offset="15" max-vertical-offset="1950">
-                      <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+                    <state vertical-scroll-proportion="0.3966346" vertical-offset="495" max-vertical-offset="1950">
+                      <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
                       <folding />
                     </state>
                   </provider>
@@ -165,8 +152,8 @@
           <file leaf-file-name="_custom.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.30769232" vertical-offset="2335" max-vertical-offset="3225">
-                  <caret line="173" column="26" selection-start-line="173" selection-start-column="26" selection-end-line="173" selection-end-column="26" />
+                <state vertical-scroll-proportion="0.8224852" vertical-offset="2590" max-vertical-offset="3435">
+                  <caret line="219" column="29" selection-start-line="219" selection-start-column="29" selection-end-line="219" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -286,8 +273,8 @@
         <option value="$PROJECT_DIR$/sass/docs.scss" />
         <option value="$PROJECT_DIR$/Data/HTML/contacts-imported5.html" />
         <option value="$PROJECT_DIR$/Data/HTML/filter-applied5.html" />
-        <option value="$PROJECT_DIR$/sass/_custom.scss" />
         <option value="$PROJECT_DIR$/Data/HTML/contact-list5.html" />
+        <option value="$PROJECT_DIR$/sass/_custom.scss" />
       </list>
     </option>
   </component>
@@ -869,14 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/contacts-imported5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36057693" vertical-offset="15" max-vertical-offset="1950">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/docs.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.897959" vertical-offset="0" max-vertical-offset="375">
@@ -885,10 +864,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/contacts-imported5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3966346" vertical-offset="495" max-vertical-offset="1950">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232" vertical-offset="2335" max-vertical-offset="3225">
-          <caret line="173" column="26" selection-start-line="173" selection-start-column="26" selection-end-line="173" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.8224852" vertical-offset="2590" max-vertical-offset="3435">
+          <caret line="219" column="29" selection-start-line="219" selection-start-column="29" selection-end-line="219" selection-end-column="29" />
           <folding />
         </state>
       </provider>

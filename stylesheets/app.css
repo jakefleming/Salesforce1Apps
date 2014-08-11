@@ -12758,3 +12758,18 @@ body #contactList > ul {
   overflow: scroll;
   top: 0;
 }
+
+/* line 212, ../sass/_custom.scss */
+select {
+  border: 1px solid #bbc0c4;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 7px 30px 7px 14px;
+  color: #3c3d3e;
+  line-height: 25px;
+  -webkit-appearance: none;
+  font-family: 'ProximaNova';
+  font-size: 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
