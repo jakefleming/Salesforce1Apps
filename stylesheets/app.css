@@ -4689,7 +4689,7 @@ input:focus, button:focus, textarea:focus {
 }
 
 /* line 3144, ../sass/_styles.scss */
-.pam {
+.pam, .filter-pad {
   padding: 14px;
 }
 
@@ -12764,7 +12764,7 @@ body #contactList > ul {
   padding-top: 45px;
 }
 
-/* line 216, ../sass/_custom.scss */
+/* line 217, ../sass/_custom.scss */
 select {
   border: 1px solid #bbc0c4;
   border-radius: 5px;
