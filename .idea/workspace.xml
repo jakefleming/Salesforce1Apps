@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="babd4dcc-d256-4f17-8382-1987147935e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" afterPath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_custom.scss" afterPath="$PROJECT_DIR$/sass/_custom.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/app.css" afterPath="$PROJECT_DIR$/stylesheets/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/HTML/filter-search5.html" afterPath="$PROJECT_DIR$/Data/HTML/filter-search5.html" />
     </list>
     <ignored path="Salesforce1Apps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -154,8 +151,8 @@
           <file leaf-file-name="_custom.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.35852373" vertical-offset="441" max-vertical-offset="3435">
-                  <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+                <state vertical-scroll-proportion="0.81546575" vertical-offset="2731" max-vertical-offset="3495">
+                  <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -164,8 +161,8 @@
           <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="190094" max-vertical-offset="191715">
-                  <caret line="12690" column="0" selection-start-line="12690" selection-start-column="0" selection-end-line="12690" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="190109" max-vertical-offset="191715">
+                  <caret line="12691" column="0" selection-start-line="12691" selection-start-column="0" selection-end-line="12691" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -655,8 +652,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="190094" max-vertical-offset="191715">
-          <caret line="12690" column="0" selection-start-line="12690" selection-start-column="0" selection-end-line="12690" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="190109" max-vertical-offset="191715">
+          <caret line="12691" column="0" selection-start-line="12691" selection-start-column="0" selection-end-line="12691" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -876,8 +873,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35852373" vertical-offset="441" max-vertical-offset="3435">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.81546575" vertical-offset="2731" max-vertical-offset="3495">
+          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
           <folding />
         </state>
       </provider>
