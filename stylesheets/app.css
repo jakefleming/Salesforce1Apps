@@ -12578,21 +12578,25 @@ html:hover [class^="ss-"] {
   z-index: 1;
 }
 
-/* line 37, ../sass/_custom.scss */
+/* line 36, ../sass/_custom.scss */
+.iphone-frame {
+  width: 320px;
+}
+/* line 38, ../sass/_custom.scss */
 .iphone-frame .sg-phone--content {
   padding-bottom: 45px;
 }
 
-/* line 42, ../sass/_custom.scss */
+/* line 43, ../sass/_custom.scss */
 .bot-t {
   border-top: 1px solid dadee2;
 }
 
-/* line 48, ../sass/_custom.scss */
+/* line 49, ../sass/_custom.scss */
 .flag--top.redundant .flag--checkbox {
   position: relative;
 }
-/* line 50, ../sass/_custom.scss */
+/* line 51, ../sass/_custom.scss */
 .flag--top.redundant .flag--checkbox:after {
   content: "";
   position: absolute;
@@ -12604,17 +12608,17 @@ html:hover [class^="ss-"] {
   border-radius: 50%;
   -webkit-border-radius: 50%;
 }
-/* line 63, ../sass/_custom.scss */
+/* line 64, ../sass/_custom.scss */
 .flag--top .flag--checkbox, .flag--top .flag--radio {
   vertical-align: top;
   display: table-cell;
 }
 
-/* line 70, ../sass/_custom.scss */
+/* line 71, ../sass/_custom.scss */
 .notifications[data-notification-count].item-count {
   position: relative;
 }
-/* line 72, ../sass/_custom.scss */
+/* line 73, ../sass/_custom.scss */
 .notifications[data-notification-count].item-count:after {
   content: attr(data-notification-count);
   position: absolute;
@@ -12630,12 +12634,12 @@ html:hover [class^="ss-"] {
   min-width: 20px;
 }
 
-/* line 89, ../sass/_custom.scss */
+/* line 90, ../sass/_custom.scss */
 .bg-global-header {
   background-color: #2a94d6;
 }
 
-/* line 93, ../sass/_custom.scss */
+/* line 94, ../sass/_custom.scss */
 input.input--header-primary {
   background-color: rgba(0, 0, 0, 0.14);
   border-color: transparent;
@@ -12643,65 +12647,65 @@ input.input--header-primary {
   border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-/* line 99, ../sass/_custom.scss */
+/* line 100, ../sass/_custom.scss */
 input.input--header-primary:-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 102, ../sass/_custom.scss */
+/* line 103, ../sass/_custom.scss */
 input.input--header-primary::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 105, ../sass/_custom.scss */
+/* line 106, ../sass/_custom.scss */
 input.input--header-primary:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 108, ../sass/_custom.scss */
+/* line 109, ../sass/_custom.scss */
 input.input--header-primary::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
 @-webkit-keyframes spinning {
-  /* line 114, ../sass/_custom.scss */
+  /* line 115, ../sass/_custom.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 117, ../sass/_custom.scss */
+  /* line 118, ../sass/_custom.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
 
-/* line 122, ../sass/_custom.scss */
+/* line 123, ../sass/_custom.scss */
 .spinning {
   -webkit-animation: spinning .875s linear infinite;
 }
 
-/* line 132, ../sass/_custom.scss */
+/* line 133, ../sass/_custom.scss */
 .dots {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* line 136, ../sass/_custom.scss */
+/* line 137, ../sass/_custom.scss */
 .error-mc-message {
   display: none;
 }
 
-/* line 143, ../sass/_custom.scss */
+/* line 144, ../sass/_custom.scss */
 .error-mc .error-mc-message {
   display: block;
 }
-/* line 146, ../sass/_custom.scss */
+/* line 147, ../sass/_custom.scss */
 .error-mc .mc-message {
   display: none;
 }
-/* line 150, ../sass/_custom.scss */
+/* line 151, ../sass/_custom.scss */
 .error-mc .flag .flag--image {
   position: relative;
 }
-/* line 152, ../sass/_custom.scss */
+/* line 153, ../sass/_custom.scss */
 .error-mc .flag .flag--image:after {
   position: absolute;
   font-family: "icomoon";
@@ -12715,20 +12719,42 @@ input.input--header-primary::-webkit-input-placeholder {
   background: #fff;
 }
 
-/* line 172, ../sass/_custom.scss */
+/* line 173, ../sass/_custom.scss */
 .dn-i {
   display: none !important;
 }
 
 /*fixes for salesforce*/
-/* line 177, ../sass/_custom.scss */
-#contactList {
-  position: relative;
-  height: 30px;
-  overflow-y: scroll;
-}
-
-/* line 183, ../sass/_custom.scss */
+/* line 179, ../sass/_custom.scss */
 ul, li, ul li {
   margin-left: 0px;
+}
+
+/*fixes for salesforce1 app*/
+/* line 185, ../sass/_custom.scss */
+body .sg-phone--content {
+  height: 100%;
+  font-size: 16px;
+}
+/* line 190, ../sass/_custom.scss */
+body .mc-header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+/* line 196, ../sass/_custom.scss */
+body #contactList {
+  position: relative;
+  overflow-y: scroll;
+  height: 100%;
+}
+/* line 200, ../sass/_custom.scss */
+body #contactList > ul {
+  padding-top: 64px;
+  padding-bottom: 44px;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  overflow: scroll;
+  top: 0;
 }

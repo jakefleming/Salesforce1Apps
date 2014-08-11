@@ -34,6 +34,7 @@
 }
 
 .iphone-frame {
+  width: 320px;
   .sg-phone--content {
     padding-bottom: 45px;
   }
@@ -174,12 +175,36 @@ input.input--header-primary {
 }
 
 /*fixes for salesforce*/
-#contactList {
-  position: relative;
-  height: 30px;
-  overflow-y: scroll;
-}
 
 ul, li, ul li {
   margin-left: 0px;
+}
+
+/*fixes for salesforce1 app*/
+body {
+  .sg-phone--content {
+    height: 100%;
+    font-size: 16px;
+  }
+
+  .mc-header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+
+  #contactList {
+    position: relative;
+    overflow-y: scroll;
+    height: 100%;
+    > ul {
+      padding-top: 64px;
+      padding-bottom: 44px;
+      height: 100%;
+      position: absolute;
+      z-index: 0;
+      overflow: scroll;
+      top: 0;
+    }
+  }
 }

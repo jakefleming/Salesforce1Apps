@@ -1,0 +1,60 @@
+<section data-bind="visible: !isFilter()" class="sg-phone--content scrollable bg-2 clear ng-scope" style="height: 100%">
+    <header class="bg-1 border-bottom border--3" style="position:absolute;width:100%;z-index: 2;">
+        <li class="flag flag--top active--list-1 pam">
+            <div class="flag--image prm">
+                <img src="http://high-impact-prospecting.com/staging/work/wp-content/uploads/2014/01/datadotcom.jpg" width="30" height="30" alt="gt" class="brm mtxs" />
+            </div>
+            <div class="flag--body">
+                <span class="db text-color-1 f3 ng-binding">Data.com</span>
+                <span class="db text-color-2 f6 ng-binding">{!headerString}</span>
+            </div>
+        </li>
+    </header>
+
+    <div id="contactList" style="height: 100%">
+        <ul class="border-bottom border--3 fw-normal bg-1 man pan ng-isolate-scope" data-bind="foreach: contacts, event: { scroll: scrolled }" style="padding-top: 64px;padding-bottom:44px;height: 100%;position: absolute;z-index: 0;overflow: scroll; top: 0;">
+            <li class="flag flag--top active--list-1 pam border-bottom border--3" data-bind="css: { redundant: $data.isRedundant }">
+                <div class="flag--checkbox prm">
+                    <input type="checkbox" class="checkbox checkbox--default checkbox--states-1 brm mrs bg-1 sq-22 a-mid dib" data-bind="click: $root.selectContact, checkedValue: $data.isSelected"/>
+                </div>
+                <div class="flag--body">
+                    <span class="db text-color-1 f4 ng-binding mbs" data-bind="text: $data.dcContact.FirstName + ' ' + $data.dcContact.LastName"></span>
+                    <div class="w-100p" data-bind="visible: $data.dcContact.Department">
+                        <label class="fl text-truncate f6 text-color-2 size-1of3">Department</label>
+                        <span class="fl text-truncate f6 text-color-2 size-2of3 fw-semibold" data-bind="text: $data.dcContact.Department"></span>
+                    </div>
+                    <div class="w-100p" data-bind="visible: $data.dcContact.City">
+                        <label class="fl text-truncate f6 text-color-2 size-1of3">Location</label>
+                        <span class="fl text-truncate f6 text-color-2 size-2of3 fw-semibold" data-bind="text: $root.location($data.dcContact.City, $data.dcContact.State)"></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="tc pam bg-2 pbxl" style="height: 25px" data-bind="visible: pendingRequest">
+            <div class="icon-utility-spinner spinning text-color-3 f-22"/>
+        </div>
+    </div>
+
+    <header class="bg-1 ht-44 ng-isolate-scope fixed-bottom bot-t" role="group">
+        <ul class="w-100p fl man pan list-horizontal ht-44 tc">
+            <li class="pos-rel fl ht-44 size-1of3">
+                <a data-bind="click: swapSort" title="Filter List" class="phm ht-44 pam">
+                    <span class="icon-utility-sort active--icon-1 text-color-3"></span>
+                    <span class="tha">Filter List</span>
+                </a>
+            </li>
+            <li class="pos-rel fl ht-44 size-1of3">
+                <a id="filter-search" data-bind="click: swapFilter" title="Filter" class="phm ht-44 pam">
+                    <span class="icon-utility-filter active--icon-1 text-color-3"></span>
+                    <span class="tha">Navigation</span>
+                </a>
+            </li>
+            <li class="pos-rel fl ht-44 size-1of3">
+                <a href="javascript:void(0)" title="Download" class="phm ht-44 pam">
+                    <span class="icon-utility-download active--icon-1 text-color-3 notifications item-count" data-notification-count="0"></span>
+                    <span class="tha">Download</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+</section>
