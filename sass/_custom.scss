@@ -41,7 +41,7 @@
 }
 
 .bot-t {
-  border-top: 1px solid dadee2;
+  border-top: 1px solid #dadee2;
 }
 
 .flag--top {
@@ -177,7 +177,7 @@ input.input--header-primary {
 /*fixes for salesforce*/
 
 ul, li, ul li {
-  margin-left: 0px;
+  margin-left: 0px!important;
 }
 
 /*fixes for salesforce1 app*/

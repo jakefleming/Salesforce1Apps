@@ -12589,7 +12589,7 @@ html:hover [class^="ss-"] {
 
 /* line 43, ../sass/_custom.scss */
 .bot-t {
-  border-top: 1px solid dadee2;
+  border-top: 1px solid #dadee2;
 }
 
 /* line 49, ../sass/_custom.scss */
@@ -12727,7 +12727,7 @@ input.input--header-primary::-webkit-input-placeholder {
 /*fixes for salesforce*/
 /* line 179, ../sass/_custom.scss */
 ul, li, ul li {
-  margin-left: 0px;
+  margin-left: 0px !important;
 }
 
 /*fixes for salesforce1 app*/
