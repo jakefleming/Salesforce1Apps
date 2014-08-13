@@ -194,6 +194,9 @@ body {
     z-index: 2;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
+    .flag--top {
+      padding: 11px 14px!important;
+    }
   }
 
   #contactList {
@@ -201,8 +204,8 @@ body {
 //    overflow-y: scroll;
     height: 100%;
     > ul {
-      padding-top: 64px;
-      padding-bottom: 44px;
+      padding-top: 58px;
+      padding-bottom: 43px;
       height: 100%;
       position: absolute;
       z-index: 0;
