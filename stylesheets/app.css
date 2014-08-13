@@ -12736,27 +12736,37 @@ body .sg-phone--content {
   height: 100%;
   font-size: 16px;
   font-family: "ProximaNova";
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -webkit-border-top-left-radius: 7px;
 }
-/* line 191, ../sass/_custom.scss */
+/* line 195, ../sass/_custom.scss */
 body .mc-header {
   position: absolute;
   width: 100%;
   z-index: 2;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -webkit-border-top-left-radius: 7px;
   background: #fff;
 }
-/* line 198, ../sass/_custom.scss */
+/* line 204, ../sass/_custom.scss */
 body .mc-header .flag--top {
   padding: 11px 14px !important;
 }
-/* line 203, ../sass/_custom.scss */
+/* line 209, ../sass/_custom.scss */
 body #contactList {
   position: relative;
   height: 100%;
 }
-/* line 207, ../sass/_custom.scss */
+/* line 213, ../sass/_custom.scss */
 body #contactList > ul {
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -webkit-border-top-left-radius: 7px;
   padding-top: 58px;
   padding-bottom: 43px;
   height: 100%;
@@ -12768,12 +12778,12 @@ body #contactList > ul {
   -webkit-overflow-scrolling: touch;
   top: 0;
 }
-/* line 219, ../sass/_custom.scss */
+/* line 229, ../sass/_custom.scss */
 body a {
   text-decoration: none !important;
 }
 
-/* line 224, ../sass/_custom.scss */
+/* line 234, ../sass/_custom.scss */
 .filter-pad {
   padding-top: 60px;
   position: absolute;
@@ -12785,7 +12795,7 @@ body a {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 235, ../sass/_custom.scss */
+/* line 245, ../sass/_custom.scss */
 select {
   border: 0px;
   border-radius: 5px;

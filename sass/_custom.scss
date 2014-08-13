@@ -186,6 +186,10 @@ body {
     height: 100%;
     font-size: 16px;
     font-family: "ProximaNova";
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
   }
 
   .mc-header {
@@ -194,6 +198,8 @@ body {
     z-index: 2;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
     background: #fff;
     .flag--top {
       padding: 11px 14px!important;
@@ -205,6 +211,10 @@ body {
 //    overflow-y: scroll;
     height: 100%;
     > ul {
+      border-top-right-radius: 7px;
+      border-top-left-radius: 7px;
+      -webkit-border-top-right-radius: 7px;
+      -webkit-border-top-left-radius: 7px;
       padding-top: 58px;
       padding-bottom: 43px;
       height: 100%;
