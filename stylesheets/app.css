@@ -12796,6 +12796,15 @@ body a {
 }
 
 /* line 245, ../sass/_custom.scss */
+.fixed-spinner {
+  position: absolute;
+  bottom: 43px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 4;
+}
+
+/* line 253, ../sass/_custom.scss */
 select {
   border: 0px;
   border-radius: 5px;

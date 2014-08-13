@@ -242,6 +242,14 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+.fixed-spinner {
+  position:absolute;
+  bottom: 43px;
+  width: 100%;
+  background: rgba(255,255,255,.8);
+  z-index: 4;
+}
+
 select {
   border: 0px;
   border-radius: 5px;

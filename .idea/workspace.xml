@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="babd4dcc-d256-4f17-8382-1987147935e9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" afterPath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_custom.scss" afterPath="$PROJECT_DIR$/sass/_custom.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/HTML/absolute-test.html" afterPath="$PROJECT_DIR$/Data/HTML/absolute-test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/app.css" afterPath="$PROJECT_DIR$/stylesheets/app.css" />
     </list>
     <ignored path="Salesforce1Apps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +30,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.6271645">
       <split-first>
         <leaf>
-          <file leaf-file-name="junk.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="junk.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Data/HTML/junk.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.42857143" vertical-offset="0" max-vertical-offset="595">
-                  <caret line="17" column="94" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="94" />
+                <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="585">
+                  <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -90,11 +93,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="absolute-test.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="absolute-test.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Data/HTML/absolute-test.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-17.041666" vertical-offset="5516" max-vertical-offset="6090">
-                  <caret line="395" column="7" selection-start-line="395" selection-start-column="4" selection-end-line="395" selection-end-column="7" />
+                <state vertical-scroll-proportion="4.0843587" vertical-offset="3286" max-vertical-offset="6135">
+                  <caret line="374" column="5" selection-start-line="374" selection-start-column="5" selection-end-line="374" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -117,8 +120,8 @@
           <file leaf-file-name="_custom.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7119741" vertical-offset="2800" max-vertical-offset="3975">
-                  <caret line="216" column="39" selection-start-line="216" selection-start-column="39" selection-end-line="216" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.61165047" vertical-offset="3357" max-vertical-offset="4095">
+                  <caret line="249" column="13" selection-start-line="249" selection-start-column="13" selection-end-line="249" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -127,8 +130,8 @@
           <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="191924" max-vertical-offset="192270">
-                  <caret line="12812" column="0" selection-start-line="12812" selection-start-column="0" selection-end-line="12812" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="192059" max-vertical-offset="192405">
+                  <caret line="12821" column="0" selection-start-line="12821" selection-start-column="0" selection-end-line="12821" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -232,7 +235,6 @@
         <option value="$PROJECT_DIR$/Data/HTML/search4.html" />
         <option value="$PROJECT_DIR$/Data/HTML/contact-summary5.html" />
         <option value="$PROJECT_DIR$/Data/HTML/frame5.html" />
-        <option value="$PROJECT_DIR$/Data/HTML/absolute-test.html" />
         <option value="$PROJECT_DIR$/sass/docs.scss" />
         <option value="$PROJECT_DIR$/Data/HTML/contacts-imported5.html" />
         <option value="$PROJECT_DIR$/Data/HTML/filter-applied5.html" />
@@ -240,6 +242,7 @@
         <option value="$PROJECT_DIR$/Data/HTML/filter-search5.html" />
         <option value="$PROJECT_DIR$/Data/HTML/junk.html" />
         <option value="$PROJECT_DIR$/sass/_custom.scss" />
+        <option value="$PROJECT_DIR$/Data/HTML/absolute-test.html" />
       </list>
     </option>
   </component>
@@ -578,8 +581,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="191924" max-vertical-offset="192270">
-          <caret line="12812" column="0" selection-start-line="12812" selection-start-column="0" selection-end-line="12812" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="192059" max-vertical-offset="192405">
+          <caret line="12821" column="0" selection-start-line="12821" selection-start-column="0" selection-end-line="12821" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -739,14 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/absolute-test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.041666" vertical-offset="5516" max-vertical-offset="6090">
-          <caret line="395" column="7" selection-start-line="395" selection-start-column="4" selection-end-line="395" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.083333" vertical-offset="220" max-vertical-offset="1305">
@@ -765,8 +760,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/HTML/junk.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42857143" vertical-offset="0" max-vertical-offset="595">
-          <caret line="17" column="94" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="94" />
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="585">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -774,10 +769,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/absolute-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.0843587" vertical-offset="3286" max-vertical-offset="6135">
+          <caret line="374" column="5" selection-start-line="374" selection-start-column="5" selection-end-line="374" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7119741" vertical-offset="2800" max-vertical-offset="3975">
-          <caret line="216" column="39" selection-start-line="216" selection-start-column="39" selection-end-line="216" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.61165047" vertical-offset="3357" max-vertical-offset="4095">
+          <caret line="249" column="13" selection-start-line="249" selection-start-column="13" selection-end-line="249" selection-end-column="13" />
           <folding />
         </state>
       </provider>
