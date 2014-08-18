@@ -225,6 +225,9 @@ body {
       -webkit-overflow-scrolling: touch;
       top: 0;
     }
+    &.growl-active {
+      padding-top: 104px;
+    }
   }
   a {
     text-decoration: none!important;
@@ -242,12 +245,23 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-.fixed-spinner {
+.fixed-spinner{
   position:absolute;
   bottom: 43px;
   width: 100%;
   background: rgba(255,255,255,.8);
   z-index: 4;
+}
+
+.growl {
+  position:absolute;
+  top: 58px;
+  width: 100%;
+  background: rgba(255,255,255,.8);
+  z-index: 4;
+  border-top-width: 1px;
+  border-top-style: solid;
+  @extend .border--2;
 }
 
 select {

@@ -627,7 +627,7 @@ table {
 }
 
 /* line 482, ../sass/_styles.scss */
-.border--2 {
+.border--2, .growl {
   border-color: #dadee2;
 }
 
@@ -12778,12 +12778,16 @@ body #contactList > ul {
   -webkit-overflow-scrolling: touch;
   top: 0;
 }
-/* line 229, ../sass/_custom.scss */
+/* line 228, ../sass/_custom.scss */
+body #contactList.growl-active {
+  padding-top: 104px;
+}
+/* line 232, ../sass/_custom.scss */
 body a {
   text-decoration: none !important;
 }
 
-/* line 234, ../sass/_custom.scss */
+/* line 237, ../sass/_custom.scss */
 .filter-pad {
   padding-top: 60px;
   position: absolute;
@@ -12795,7 +12799,7 @@ body a {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 245, ../sass/_custom.scss */
+/* line 248, ../sass/_custom.scss */
 .fixed-spinner {
   position: absolute;
   bottom: 43px;
@@ -12804,7 +12808,18 @@ body a {
   z-index: 4;
 }
 
-/* line 253, ../sass/_custom.scss */
+/* line 256, ../sass/_custom.scss */
+.growl {
+  position: absolute;
+  top: 58px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 4;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+/* line 267, ../sass/_custom.scss */
 select {
   border: 0px;
   border-radius: 5px;
@@ -12820,7 +12835,7 @@ select {
   height: 46px;
 }
 
-/* line 268, ../sass/_custom.scss */
+/* line 282, ../sass/_custom.scss */
 .label--lookup:before {
   position: absolute;
   top: 0;
