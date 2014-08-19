@@ -226,7 +226,9 @@ body {
       top: 0;
     }
     &.growl-active {
-      padding-top: 104px;
+      ul {
+        padding-top: 104px;
+      }
     }
   }
   a {

@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="babd4dcc-d256-4f17-8382-1987147935e9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/contact-list6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/contact-summary6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/contacts-imported6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/filter-applied6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/filter-search6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/frame6.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" afterPath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_custom.scss" afterPath="$PROJECT_DIR$/sass/_custom.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/HTML/absolute-test.html" afterPath="$PROJECT_DIR$/Data/HTML/absolute-test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/app.css" afterPath="$PROJECT_DIR$/stylesheets/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/HTML/contacts-imported5.html" afterPath="$PROJECT_DIR$/Data/HTML/contacts-imported5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/HTML/contact-list4-error-mc1.html" afterPath="$PROJECT_DIR$/Data/HTML/contact-list4-error-mc1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html" afterPath="$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/HTML/error-mc1.html" afterPath="$PROJECT_DIR$/Data/HTML/error-mc1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Salesforce1Apps.iws" />
@@ -30,76 +36,85 @@
     <favorites_list name="Salesforce1Apps" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6271645">
+    <splitter split-orientation="horizontal" split-proportion="0.69296515">
       <split-first>
         <leaf>
-          <file leaf-file-name="junk.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Data/HTML/junk.html">
+          <file leaf-file-name="frame6.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/HTML/frame6.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+                <state line="78" column="100" selection-start="4023" selection-end="4023" vertical-scroll-proportion="-40.0" vertical-offset="210" max-vertical-offset="1650">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="frame5.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Data/HTML/frame5.html">
+          <file leaf-file-name="contact-summary6.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/HTML/contact-summary6.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="29" selection-start="684" selection-end="684" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1650">
+                <state line="72" column="17" selection-start="3203" selection-end="3203" vertical-scroll-proportion="-2.08" vertical-offset="976" max-vertical-offset="2550">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="contact-summary5.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Data/HTML/contact-summary5.html">
+          <file leaf-file-name="contact-list6.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list6.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2550">
+                <state line="143" column="56" selection-start="7879" selection-end="7879" vertical-scroll-proportion="-4.18" vertical-offset="1936" max-vertical-offset="2895">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="contact-list5.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list5.html">
+          <file leaf-file-name="filter-search6.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search6.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2895">
+                <state line="19" column="12" selection-start="1082" selection-end="1082" vertical-scroll-proportion="-5.7" vertical-offset="0" max-vertical-offset="1410">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="filter-applied5.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Data/HTML/filter-applied5.html">
+          <file leaf-file-name="filter-applied6.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/HTML/filter-applied6.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
+                <state line="75" column="23" selection-start="3485" selection-end="3487" vertical-scroll-proportion="-3.88" vertical-offset="931" max-vertical-offset="1890">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="contacts-imported5.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Data/HTML/contacts-imported5.html">
+          <file leaf-file-name="contacts-imported6.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Data/HTML/contacts-imported6.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="63" column="18" selection-start="2102" selection-end="2527" vertical-scroll-proportion="-6.58" vertical-offset="616" max-vertical-offset="1950">
+                <state line="42" column="52" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.22945206" vertical-offset="496" max-vertical-offset="1860">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="absolute-test.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Data/HTML/absolute-test.html">
+          <file leaf-file-name="contact-list4-error-mc1.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4-error-mc1.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="100" selection-start="2689" selection-end="2693" vertical-scroll-proportion="0.3321918" vertical-offset="781" max-vertical-offset="6300">
+                <state line="190" column="11" selection-start="9778" selection-end="9886" vertical-scroll-proportion="-6.58" vertical-offset="2521" max-vertical-offset="3105">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="filter-search5.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search5.html">
+          <file leaf-file-name="error-mc1.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/HTML/error-mc1.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+                <state line="167" column="11" selection-start="8550" selection-end="8658" vertical-scroll-proportion="-8.38" vertical-offset="2086" max-vertical-offset="2670">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="contact-list4-error-mc2.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="39" column="89" selection-start="1748" selection-end="1752" vertical-scroll-proportion="-3.88" vertical-offset="391" max-vertical-offset="3060">
                   <folding />
                 </state>
               </provider>
@@ -109,46 +124,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_custom.scss" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="228" column="24" selection-start="4522" selection-end="4522" vertical-scroll-proportion="0.9230769" vertical-offset="2904" max-vertical-offset="4440">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="192750">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="_icons.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/_icons.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3345">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="docs.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sass/docs.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_styles.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="479" column="14" selection-start="11624" selection-end="11636" vertical-scroll-proportion="-2.48" vertical-offset="6999" max-vertical-offset="105585">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3345">
                   <folding />
                 </state>
               </provider>
@@ -157,8 +136,46 @@
           <file leaf-file-name="_fonts.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/_fonts.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_styles.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="479" column="14" selection-start="11624" selection-end="11636" vertical-scroll-proportion="-7.75" vertical-offset="6999" max-vertical-offset="105585">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="docs.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sass/docs.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="375">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_custom.scss" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="225" column="10" selection-start="4467" selection-end="4467" vertical-scroll-proportion="0.7495528" vertical-offset="2956" max-vertical-offset="4470">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="192810">
+                  <folding>
+                    <marker date="1408464116000" expanded="true" signature="347944:347972" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -178,12 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/fonts/ss-gizmo/_ss-gizmo.scss" />
-        <option value="$PROJECT_DIR$/fonts/ss-pika/_ss-pika.scss" />
-        <option value="$PROJECT_DIR$/sass/_icons.scss" />
-        <option value="$PROJECT_DIR$/Data/HTML/test.html" />
-        <option value="$PROJECT_DIR$/Data/HTML/contact-summary.php" />
-        <option value="$PROJECT_DIR$/Data/HTML/index.php" />
         <option value="$PROJECT_DIR$/sass/_docs.scss" />
         <option value="$PROJECT_DIR$/Data/HTML/contact-summary.html" />
         <option value="$PROJECT_DIR$/Data/HTML/filter-search.html" />
@@ -209,9 +220,6 @@
         <option value="$PROJECT_DIR$/Data/HTML/contact-list3.html" />
         <option value="$PROJECT_DIR$/Data/HTML/filter-search4.html" />
         <option value="$PROJECT_DIR$/Data/HTML/frame4.html" />
-        <option value="$PROJECT_DIR$/Data/HTML/contact-list4-error-mc1.html" />
-        <option value="$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html" />
-        <option value="$PROJECT_DIR$/Data/HTML/error-mc1.html" />
         <option value="$PROJECT_DIR$/Data/HTML/error-mc2.html" />
         <option value="$PROJECT_DIR$/Data/HTML/contact-summary4.html" />
         <option value="$PROJECT_DIR$/Data/HTML/contact-list4.html" />
@@ -228,7 +236,16 @@
         <option value="$PROJECT_DIR$/Data/HTML/contacts-imported5.html" />
         <option value="$PROJECT_DIR$/Data/HTML/absolute-test.html" />
         <option value="$PROJECT_DIR$/sass/_styles.scss" />
+        <option value="$PROJECT_DIR$/Data/HTML/frame6.html" />
+        <option value="$PROJECT_DIR$/Data/HTML/filter-applied6.html" />
+        <option value="$PROJECT_DIR$/Data/HTML/contact-list6.html" />
         <option value="$PROJECT_DIR$/sass/_custom.scss" />
+        <option value="$PROJECT_DIR$/Data/HTML/contacts-imported6.html" />
+        <option value="$PROJECT_DIR$/Data/HTML/contact-list4-error-mc1.html" />
+        <option value="$PROJECT_DIR$/Data/HTML/error-mc1.html" />
+        <option value="$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html" />
+        <option value="$PROJECT_DIR$/Data/HTML/contact-summary6.html" />
+        <option value="$PROJECT_DIR$/Data/HTML/filter-search6.html" />
       </list>
     </option>
   </component>
@@ -349,13 +366,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="22" width="1869" height="1178" extended-state="0" />
+    <frame x="51" y="22" width="1869" height="1178" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37060416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18619582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -386,9 +403,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -408,36 +425,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-summary.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fonts/ss-standard/_ss-standard.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fonts/ss-gizmo/_ss-gizmo.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/HTML/contact-summary.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -528,13 +515,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="192750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/HTML/contact-summary3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -550,31 +530,7 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4-error-mc1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_icons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/HTML/contact-summary4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/error-mc1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
@@ -585,11 +541,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
@@ -614,14 +565,30 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/docs.scss">
+    <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-summary5.html">
+    <entry file="file://$PROJECT_DIR$/Data/HTML/absolute-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="70" selection-start="3130" selection-end="3130" vertical-scroll-proportion="0.5795918" vertical-offset="781" max-vertical-offset="6300">
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/contacts-imported5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="18" selection-start="2102" selection-end="2527" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/filter-applied5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
@@ -635,16 +602,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/filter-applied5.html">
+    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-summary5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search5.html">
+    <entry file="file://$PROJECT_DIR$/Data/HTML/frame5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="14" column="29" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>
@@ -656,37 +623,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/frame5.html">
+    <entry file="file://$PROJECT_DIR$/sass/_icons.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="684" selection-end="684" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1650">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/contacts-imported5.html">
+    <entry file="file://$PROJECT_DIR$/sass/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="18" selection-start="2102" selection-end="2527" vertical-scroll-proportion="-6.58" vertical-offset="616" max-vertical-offset="1950">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="479" column="14" selection-start="11624" selection-end="11636" vertical-scroll-proportion="-2.48" vertical-offset="6999" max-vertical-offset="105585">
+        <state line="479" column="14" selection-start="11624" selection-end="11636" vertical-scroll-proportion="-7.75" vertical-offset="6999" max-vertical-offset="105585">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/absolute-test.html">
+    <entry file="file://$PROJECT_DIR$/sass/docs.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="100" selection-start="2689" selection-end="2693" vertical-scroll-proportion="0.3321918" vertical-offset="781" max-vertical-offset="6300">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="192810">
+          <folding>
+            <marker date="1408464116000" expanded="true" signature="347944:347972" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/filter-applied6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="23" selection-start="3485" selection-end="3487" vertical-scroll-proportion="-3.88" vertical-offset="931" max-vertical-offset="1890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="56" selection-start="7879" selection-end="7879" vertical-scroll-proportion="-4.18" vertical-offset="1936" max-vertical-offset="2895">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4-error-mc1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="11" selection-start="9778" selection-end="9886" vertical-scroll-proportion="-6.58" vertical-offset="2521" max-vertical-offset="3105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/error-mc1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="11" selection-start="8550" selection-end="8658" vertical-scroll-proportion="-8.38" vertical-offset="2086" max-vertical-offset="2670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="89" selection-start="1748" selection-end="1752" vertical-scroll-proportion="-3.88" vertical-offset="391" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/frame6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="100" selection-start="4023" selection-end="4023" vertical-scroll-proportion="-40.0" vertical-offset="210" max-vertical-offset="1650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-summary6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="17" selection-start="3203" selection-end="3203" vertical-scroll-proportion="-2.08" vertical-offset="976" max-vertical-offset="2550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="1082" selection-end="1082" vertical-scroll-proportion="-5.7" vertical-offset="0" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/contacts-imported6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="52" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.22945206" vertical-offset="496" max-vertical-offset="1860">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="24" selection-start="4522" selection-end="4522" vertical-scroll-proportion="0.9230769" vertical-offset="2904" max-vertical-offset="4440">
+        <state line="225" column="10" selection-start="4467" selection-end="4467" vertical-scroll-proportion="0.7495528" vertical-offset="2956" max-vertical-offset="4470">
           <folding />
         </state>
       </provider>

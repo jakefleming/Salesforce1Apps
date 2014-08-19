@@ -182,8 +182,9 @@
         $('#search-contacts').click(function() {
             window.location = "search4.html";
         });
-        $('.backButton').click(function() {
-            window.location = "contact-summary4.html";
+        $('a.backButton').click(function(){
+            parent.history.back();
+            return false;
         });
         $('.checkbox').click(function() {
             var counter = parseInt($('.icon-utility-download.item-count').attr('data-notification-count'), 10);

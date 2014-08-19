@@ -12778,16 +12778,16 @@ body #contactList > ul {
   -webkit-overflow-scrolling: touch;
   top: 0;
 }
-/* line 228, ../sass/_custom.scss */
-body #contactList.growl-active {
+/* line 229, ../sass/_custom.scss */
+body #contactList.growl-active ul {
   padding-top: 104px;
 }
-/* line 232, ../sass/_custom.scss */
+/* line 234, ../sass/_custom.scss */
 body a {
   text-decoration: none !important;
 }
 
-/* line 237, ../sass/_custom.scss */
+/* line 239, ../sass/_custom.scss */
 .filter-pad {
   padding-top: 60px;
   position: absolute;
@@ -12799,7 +12799,7 @@ body a {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 248, ../sass/_custom.scss */
+/* line 250, ../sass/_custom.scss */
 .fixed-spinner {
   position: absolute;
   bottom: 43px;
@@ -12808,7 +12808,7 @@ body a {
   z-index: 4;
 }
 
-/* line 256, ../sass/_custom.scss */
+/* line 258, ../sass/_custom.scss */
 .growl {
   position: absolute;
   top: 58px;
@@ -12819,7 +12819,7 @@ body a {
   border-top-style: solid;
 }
 
-/* line 267, ../sass/_custom.scss */
+/* line 269, ../sass/_custom.scss */
 select {
   border: 0px;
   border-radius: 5px;
@@ -12835,7 +12835,7 @@ select {
   height: 46px;
 }
 
-/* line 282, ../sass/_custom.scss */
+/* line 284, ../sass/_custom.scss */
 .label--lookup:before {
   position: absolute;
   top: 0;

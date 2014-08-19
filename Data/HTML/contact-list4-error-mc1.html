@@ -37,7 +37,7 @@
     <header class="bg-primary ht-44 ng-isolate-scope" role="group">
         <ul class="fl man pan list-horizontal ht-44">
             <li class="pos-rel fl ht-44">
-                <a href="javascript:void(0)" title="Navigation" class="phm ht-44 pam backButton">
+                <a href="javascript:void(0)" title="Navigation" class="phm ht-44 pam backButton" onclick="goBack()">
                     <span class="icon-utility-back active--icon-1 text-color-5"></span>
                     <span class="tha">Back</span>
                 </a>
@@ -182,8 +182,12 @@
         $('#search-contacts').click(function() {
             window.location = "search4.html";
         });
-        $('.backButton').click(function() {
-            window.location = "contact-summary4.html";
+//        $('.backButton').click(function() {
+//            window.location = "contact-summary4.html";
+//        });
+        $('a.backButton').click(function(){
+            parent.history.back();
+            return false;
         });
         $('.checkbox').click(function() {
             var counter = parseInt($('.icon-utility-download.item-count').attr('data-notification-count'), 10);
