@@ -12717,21 +12717,22 @@ input.input--header-primary::-webkit-input-placeholder {
   -webkit-border-radius: 16px;
   border: 2px solid #fff;
   background: #fff;
+  display: none;
 }
 
-/* line 173, ../sass/_custom.scss */
+/* line 174, ../sass/_custom.scss */
 .dn-i {
   display: none !important;
 }
 
 /*fixes for salesforce*/
-/* line 179, ../sass/_custom.scss */
+/* line 180, ../sass/_custom.scss */
 ul, li, ul li {
   margin-left: 0px !important;
 }
 
 /*fixes for salesforce1 app*/
-/* line 185, ../sass/_custom.scss */
+/* line 186, ../sass/_custom.scss */
 body .sg-phone--content {
   height: 100%;
   font-size: 16px;
@@ -12741,7 +12742,7 @@ body .sg-phone--content {
   -webkit-border-top-right-radius: 5px;
   -webkit-border-top-left-radius: 5px;
 }
-/* line 195, ../sass/_custom.scss */
+/* line 196, ../sass/_custom.scss */
 body .mc-header {
   position: absolute;
   width: 100%;
@@ -12751,17 +12752,18 @@ body .mc-header {
   -webkit-border-top-right-radius: 5px;
   -webkit-border-top-left-radius: 5px;
   background: #fff;
+  min-height: 58px;
 }
-/* line 204, ../sass/_custom.scss */
+/* line 206, ../sass/_custom.scss */
 body .mc-header .flag--top {
   padding: 11px 14px !important;
 }
-/* line 209, ../sass/_custom.scss */
+/* line 211, ../sass/_custom.scss */
 body #contactList {
   position: relative;
   height: 100%;
 }
-/* line 213, ../sass/_custom.scss */
+/* line 215, ../sass/_custom.scss */
 body #contactList > ul {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -12778,16 +12780,16 @@ body #contactList > ul {
   -webkit-overflow-scrolling: touch;
   top: 0;
 }
-/* line 229, ../sass/_custom.scss */
+/* line 231, ../sass/_custom.scss */
 body #contactList.growl-active ul {
   padding-top: 104px;
 }
-/* line 234, ../sass/_custom.scss */
+/* line 236, ../sass/_custom.scss */
 body a {
   text-decoration: none !important;
 }
 
-/* line 239, ../sass/_custom.scss */
+/* line 241, ../sass/_custom.scss */
 .filter-pad {
   padding-top: 60px;
   position: absolute;
@@ -12799,7 +12801,7 @@ body a {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 250, ../sass/_custom.scss */
+/* line 252, ../sass/_custom.scss */
 .fixed-spinner {
   position: absolute;
   bottom: 43px;
@@ -12808,7 +12810,7 @@ body a {
   z-index: 4;
 }
 
-/* line 258, ../sass/_custom.scss */
+/* line 260, ../sass/_custom.scss */
 .growl {
   position: absolute;
   top: 58px;
@@ -12819,7 +12821,7 @@ body a {
   border-top-style: solid;
 }
 
-/* line 269, ../sass/_custom.scss */
+/* line 271, ../sass/_custom.scss */
 select {
   border: 0px;
   border-radius: 5px;
@@ -12835,7 +12837,7 @@ select {
   height: 46px;
 }
 
-/* line 284, ../sass/_custom.scss */
+/* line 286, ../sass/_custom.scss */
 .label--lookup:before {
   position: absolute;
   top: 0;

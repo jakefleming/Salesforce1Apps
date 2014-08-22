@@ -163,6 +163,7 @@ input.input--header-primary {
 //        background: #f0f1f2;
         border: 2px solid #fff;
         background: #fff;
+        display: none;
       }
       img {
       }
@@ -201,6 +202,7 @@ body {
     -webkit-border-top-right-radius: 5px;
     -webkit-border-top-left-radius: 5px;
     background: #fff;
+    min-height: 58px;
     .flag--top {
       padding: 11px 14px!important;
     }
