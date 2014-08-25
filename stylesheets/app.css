@@ -12743,7 +12743,7 @@ body .sg-phone--content {
   -webkit-border-top-left-radius: 5px;
 }
 /* line 196, ../sass/_custom.scss */
-body .mc-header {
+body .mc-header, body .filter-header {
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -12752,18 +12752,21 @@ body .mc-header {
   -webkit-border-top-right-radius: 5px;
   -webkit-border-top-left-radius: 5px;
   background: #fff;
-  min-height: 58px;
 }
-/* line 206, ../sass/_custom.scss */
-body .mc-header .flag--top {
+/* line 205, ../sass/_custom.scss */
+body .mc-header .flag--top, body .filter-header .flag--top {
   padding: 11px 14px !important;
 }
-/* line 211, ../sass/_custom.scss */
+/* line 209, ../sass/_custom.scss */
+body .mc-header {
+  min-height: 58px;
+}
+/* line 213, ../sass/_custom.scss */
 body #contactList {
   position: relative;
   height: 100%;
 }
-/* line 215, ../sass/_custom.scss */
+/* line 217, ../sass/_custom.scss */
 body #contactList > ul {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -12780,16 +12783,16 @@ body #contactList > ul {
   -webkit-overflow-scrolling: touch;
   top: 0;
 }
-/* line 231, ../sass/_custom.scss */
+/* line 233, ../sass/_custom.scss */
 body #contactList.growl-active ul {
   padding-top: 104px;
 }
-/* line 236, ../sass/_custom.scss */
+/* line 238, ../sass/_custom.scss */
 body a {
   text-decoration: none !important;
 }
 
-/* line 241, ../sass/_custom.scss */
+/* line 243, ../sass/_custom.scss */
 .filter-pad {
   padding-top: 60px;
   position: absolute;
@@ -12801,7 +12804,7 @@ body a {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 252, ../sass/_custom.scss */
+/* line 254, ../sass/_custom.scss */
 .fixed-spinner {
   position: absolute;
   bottom: 43px;
@@ -12810,7 +12813,7 @@ body a {
   z-index: 4;
 }
 
-/* line 260, ../sass/_custom.scss */
+/* line 262, ../sass/_custom.scss */
 .growl {
   position: absolute;
   top: 58px;
@@ -12821,7 +12824,7 @@ body a {
   border-top-style: solid;
 }
 
-/* line 271, ../sass/_custom.scss */
+/* line 273, ../sass/_custom.scss */
 select {
   border: 0px;
   border-radius: 5px;
@@ -12837,7 +12840,7 @@ select {
   height: 46px;
 }
 
-/* line 286, ../sass/_custom.scss */
+/* line 288, ../sass/_custom.scss */
 .label--lookup:before {
   position: absolute;
   top: 0;

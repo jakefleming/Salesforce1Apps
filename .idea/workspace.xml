@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="babd4dcc-d256-4f17-8382-1987147935e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" afterPath="$PROJECT_DIR$/.sass-cache/8067c92b4616c6ce41d8c404db666d26258289bc/_custom.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_custom.scss" afterPath="$PROJECT_DIR$/sass/_custom.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/app.css" afterPath="$PROJECT_DIR$/stylesheets/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Salesforce1Apps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,10 +54,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="filter-search6.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="filter-search6.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search6.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="12" selection-start="1082" selection-end="1082" vertical-scroll-proportion="-5.7" vertical-offset="0" max-vertical-offset="1410">
+                <state line="10" column="87" selection-start="330" selection-end="330" vertical-scroll-proportion="0.12931034" vertical-offset="90" max-vertical-offset="1410">
                   <folding />
                 </state>
               </provider>
@@ -102,10 +99,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="contact-list4-error-mc2.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="contact-list4-error-mc2.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="71" column="56" selection-start="3077" selection-end="3171" vertical-scroll-proportion="0.43493152" vertical-offset="811" max-vertical-offset="3060">
+                <state line="49" column="15" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-4.48" vertical-offset="511" max-vertical-offset="3060">
                   <folding />
                 </state>
               </provider>
@@ -136,7 +133,7 @@
           <file leaf-file-name="_styles.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="812" column="0" selection-start="17121" selection-end="17121" vertical-scroll-proportion="-5.36" vertical-offset="11778" max-vertical-offset="105585">
+                <state line="2052" column="0" selection-start="49066" selection-end="49066" vertical-scroll-proportion="-1.3866667" vertical-offset="30676" max-vertical-offset="105585">
                   <folding />
                 </state>
               </provider>
@@ -154,7 +151,7 @@
           <file leaf-file-name="_custom.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="204" column="21" selection-start="3940" selection-end="3940" vertical-scroll-proportion="0.5596639" vertical-offset="2727" max-vertical-offset="4500">
+                <state line="209" column="21" selection-start="4034" selection-end="4034" vertical-scroll-proportion="0.57473683" vertical-offset="2862" max-vertical-offset="4530">
                   <folding />
                 </state>
               </provider>
@@ -246,7 +243,7 @@
     <option name="x" value="1920" />
     <option name="y" value="262" />
     <option name="width" value="1869" />
-    <option name="height" value="1178" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -358,11 +355,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="262" width="1869" height="1178" extended-state="0" />
-    <editor active="false" />
+    <frame x="1920" y="262" width="1869" height="1058" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37060416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41557127" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -681,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="1082" selection-end="1082" vertical-scroll-proportion="-5.7" vertical-offset="0" max-vertical-offset="1410">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/HTML/contacts-imported6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="39" selection-start="1759" selection-end="1759" vertical-scroll-proportion="-4.18" vertical-offset="391" max-vertical-offset="1860">
@@ -702,23 +692,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html">
+    <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="56" selection-start="3077" selection-end="3171" vertical-scroll-proportion="0.43493152" vertical-offset="811" max-vertical-offset="3060">
+        <state line="2052" column="0" selection-start="49066" selection-end="49066" vertical-scroll-proportion="-1.3866667" vertical-offset="30676" max-vertical-offset="105585">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
+    <entry file="file://$PROJECT_DIR$/Data/HTML/contact-list4-error-mc2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="812" column="0" selection-start="17121" selection-end="17121" vertical-scroll-proportion="-5.36" vertical-offset="11778" max-vertical-offset="105585">
+        <state line="49" column="15" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-4.48" vertical-offset="511" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/filter-search6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="87" selection-start="330" selection-end="330" vertical-scroll-proportion="0.12931034" vertical-offset="90" max-vertical-offset="1410">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="21" selection-start="3940" selection-end="3940" vertical-scroll-proportion="0.5596639" vertical-offset="2727" max-vertical-offset="4500">
+        <state line="209" column="21" selection-start="4034" selection-end="4034" vertical-scroll-proportion="0.57473683" vertical-offset="2862" max-vertical-offset="4530">
           <folding />
         </state>
       </provider>
