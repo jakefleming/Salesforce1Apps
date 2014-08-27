@@ -12831,16 +12831,17 @@ select {
   background-color: #ffffff;
   padding: 14px 28px 14px 14px;
   color: #3c3d3e;
-  line-height: 16px;
+  line-height: 17px !important;
   -webkit-appearance: none;
   font-family: 'ProximaNova';
   font-size: 15px;
   box-sizing: border-box;
   width: 100%;
   height: 46px;
+  overflow: visible !important;
 }
 
-/* line 288, ../sass/_custom.scss */
+/* line 289, ../sass/_custom.scss */
 .label--lookup:before {
   position: absolute;
   top: 0;
